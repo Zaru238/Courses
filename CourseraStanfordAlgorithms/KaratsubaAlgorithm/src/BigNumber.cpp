@@ -42,18 +42,41 @@ BigNumber::BigNumber(const std::string& letters) {
   assert(IsNumber(letters));
 
   number_.reserve(std::size(letters));
-  std::transform(std::begin(letters), std::end(letters), std::back_inserter(number_),
+  std::transform(std::crbegin(letters), std::crend(letters), std::back_inserter(number_),
     [](const auto letter) {
       return toInt(letter);
     }
   );
 }
 
+BigNumber BigNumber::operator+(const BigNumber& other) const {
+  const size_t addOpCount = std::max(std::size(number_), std::size(other.number_));
+  BigNumber answer("");
+  answer.number_.resize(addOpCount + 1, 0);
+
+  for (size_t i = 0; i < addOpCount; ++i) {
+    const uint8_t sum = answer.number_.at(i) + number_.at(i) + other.number_.at(i);
+    answer.number_.at(i) = sum % 10;
+    answer.number_.at(i + 1) += sum / 10;
+  }
+
+  if (0 == answer.number_.back()) {
+    answer.number_.pop_back();
+  }
+
+  return answer;
+}
+
+
 std::string BigNumber::toStr() const {
+  if (std::empty(number_)) {
+    return std::string(0);
+  }
+
   std::string answer;
   answer.reserve(std::size(number_));
 
-  std::transform(std::begin(number_), std::end(number_), std::back_inserter(answer),
+  std::transform(std::crbegin(number_), std::crend(number_), std::back_inserter(answer),
     [](const auto integer) {
       return toChar(integer);
     }
