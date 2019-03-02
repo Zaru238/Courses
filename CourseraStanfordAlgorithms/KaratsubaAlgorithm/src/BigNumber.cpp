@@ -49,6 +49,36 @@ BigNumber::BigNumber(const std::string& letters) {
   );
 }
 
+bool BigNumber::operator>(const BigNumber& other) const {
+  if (is_positive && !other.is_positive) {
+    return true;
+  }
+
+  if (!is_positive && other.is_positive) {
+    return false;
+  }
+
+  bool is_greater_inmodulus {false};
+
+  if (std::size(number_) > std::size(other.number_)) {
+    is_greater_inmodulus = true;
+  } else if (std::size(other.number_) > std::size(number_)) {
+    is_greater_inmodulus = false;
+  } else {
+    for (size_t i = std::size(number_); i > 0; --i) {
+      if (number_.at(i - 1) > other.number_.at(i - 1)) {
+        is_greater_inmodulus = true;
+        break;
+      } else if (other.number_.at(i - 1) > number_.at(i - 1)) {
+        is_greater_inmodulus = false;
+        break;
+      }
+    }
+  }
+
+  return (is_positive && is_greater_inmodulus);
+}
+
 BigNumber BigNumber::operator+(const BigNumber& other) const {
   const size_t addOpCount = std::max(std::size(number_), std::size(other.number_));
   BigNumber answer("");
