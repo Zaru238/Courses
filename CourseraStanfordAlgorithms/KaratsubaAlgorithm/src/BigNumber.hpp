@@ -19,9 +19,17 @@ public:
   std::string toStr() const;
 
 private:
-  // zerron number should have positive sign
-  bool is_positive {true};
+  using NumberTable = std::vector<uint8_t>;
+
+  static bool IsGreater(const NumberTable& left, const NumberTable& right);
+
+  static NumberTable Add(const NumberTable& left, const NumberTable& right);
+
+  //left should be greater or eqaal that right
+  static NumberTable Substract(const NumberTable& left, const NumberTable& right);
+
+  bool is_positive_;
   // each cell contains one number from 0 to 9
   // variable stores number in little endian (e.g. leftmost cell (0) contains the lowest digit
-  std::vector<uint8_t> number_;
+  NumberTable number_table_;
 };
