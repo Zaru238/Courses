@@ -1,0 +1,3 @@
+KaratsubaAlgorithm
+  move number_table_ to separate class and cover it by unittests
+  multiplication should use stack instead of recursion

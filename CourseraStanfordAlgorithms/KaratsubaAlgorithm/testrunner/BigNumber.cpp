@@ -3,7 +3,7 @@
 #include <array>
 #include <string>
 
-#include <BigNumber.hpp>
+#include <library/BigNumber.hpp>
 
 namespace {
 struct OneStrInputOneStrOutput {
@@ -138,7 +138,7 @@ TEST_P(MultiplicationTest, CheckMultiplication) {
   ASSERT_EQ((first * second).toStr(), data.output);
 }
 
-const std::array<TwoStrInputOneStrOutput, 8> kMultiplicationTestData = {{
+const std::array<TwoStrInputOneStrOutput, 11> kMultiplicationTestData = {{
     {"0", "0", "0"},
     {"5", "0", "0"},
     {"4", "3", "12"},
@@ -147,6 +147,9 @@ const std::array<TwoStrInputOneStrOutput, 8> kMultiplicationTestData = {{
     {"10", "10", "100"},
     {"11", "11", "121"},
     {"254", "384", "97536"},
+    {"10", "3843243242343242543234", "38432432423432425432340"},
+    {"0", "3843243242343242543234", "0"},
+    {"4123423142314312421342314324231432432443243", "42432142314234324321432141324132432143214321", "174965677596488198311255401479299804516125710069385307155777638158145498226713417283003"},
 }};
 
 INSTANTIATE_TEST_CASE_P(DefaultTestSuite, MultiplicationTest,

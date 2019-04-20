@@ -58,14 +58,10 @@ BigNumber::BigNumber(const std::string& letters) : is_positive_{true} {
     --lastLetterIter;
   }
 
-  if (std::crbegin(letters) == lastLetterIter) {
-    number_table_.push_back(0);
-  } else {
-    number_table_.reserve(std::size(letters));
-    std::transform(std::crbegin(letters), lastLetterIter,
-                   std::back_inserter(number_table_),
-                   [](const auto letter) { return toInt(letter); });
-  }
+  number_table_.reserve(std::size(letters));
+  std::transform(std::crbegin(letters), lastLetterIter,
+                 std::back_inserter(number_table_),
+                 [](const auto letter) { return toInt(letter); });
 
   Adjust();
 }
@@ -79,23 +75,7 @@ bool BigNumber::operator>(const BigNumber& other) const {
     return false;
   }
 
-  bool is_greater_inmodulus{false};
-
-  if (std::size(number_table_) > std::size(other.number_table_)) {
-    is_greater_inmodulus = true;
-  } else if (std::size(other.number_table_) > std::size(number_table_)) {
-    is_greater_inmodulus = false;
-  } else {
-    for (size_t i = std::size(number_table_); i > 0; --i) {
-      if (number_table_.at(i - 1) > other.number_table_.at(i - 1)) {
-        is_greater_inmodulus = true;
-        break;
-      } else if (other.number_table_.at(i - 1) > number_table_.at(i - 1)) {
-        is_greater_inmodulus = false;
-        break;
-      }
-    }
-  }
+  bool is_greater_inmodulus = IsGreater(number_table_, other.number_table_);
 
   return (is_positive_ == is_greater_inmodulus);
 }
@@ -210,6 +190,10 @@ std::string BigNumber::toStr() const {
 void BigNumber::Adjust() {
   while ((std::size(number_table_) > 1) && (number_table_.back() == 0)) {
     number_table_.pop_back();
+  }
+
+  if (std::empty(number_table_)) {
+    number_table_.push_back(0);
   }
 
   if ((std::size(number_table_) == 1) && (number_table_.at(0) == 0) &&

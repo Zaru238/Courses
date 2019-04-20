@@ -1,31 +1,29 @@
 #! /usr/bin/make -f
 
-.DEFAULT_GOAL = all
+.DEFAULT_GOAL := all
 
-release-dir = _build-release
-debug-dir = _build-debug
+bin_dir := _build
 
-release:
-	mkdir -p $(release-dir)
-	cmake -B$(release-dir) -DCMAKE_BUILD_TYPE=RELWITHDEBINFO
-	make -C $(release-dir)
+program: | $(bin_dir)
+	cmake -B$(bin_dir)
+	make -C $(bin_dir) program
 
-debug:
-	mkdir -p $(debug-dir)
-	cmake -B$(debug-dir) -DCMAKE_BUILD_TYPE=DEBUG
-	make -C $(debug-dir)
+testrunner: | $(bin_dir)
+	cmake -B$(bin_dir)
+	make -C $(bin_dir) testrunner
 
-all: release debug
+$(bin_dir):
+	mkdir -p $(bin_dir)
 
-relTest: release
-	$(release-dir)/testrunner
+all: program testrunner
 
-debTest: debug
-	$(debug-dir)/testrunner
+run: program
+	$(bin_dir)/program/program
 
-test: debTest
+test: testrunner
+	$(bin_dir)/testrunner/testrunner
 
 clean:
-	rm -rf $(release-dir) $(debug-dir)
+	rm -rf $(bin_dir)
 
-.PHONY: clean
+.PHONY: clean program testrunner all test

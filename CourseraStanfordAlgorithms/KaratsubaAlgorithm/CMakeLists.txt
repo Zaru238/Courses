@@ -6,48 +6,8 @@ set (CMAKE_CXX_COMPILER "clang++")
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
+set (CMAKE_BUILD_TYPE Release)
 
-#Cppcheck setup
-find_program(CMAKE_CXX_CPPCHECK NAMES cppcheck)
-if (CMAKE_CXX_CPPCHECK)
-  list(APPEND CMAKE_CXX_CPPCHECK
-    "--enable=warning"
-    "--inconclusive"
-    "--force"
-  )
-endif()
-
-include(CTest)
-find_package(GTest)
-
-enable_testing()
-
-set(SOURCES
-  src/BigNumber.cpp
-)
-
-set(TEST_SOURCES
-  test/main.cpp
-  test/BigNumber.cpp
-)
-
-
-add_executable(testrunner
-  "${SOURCES}"
-  "${TEST_SOURCES}")
-
-target_compile_options(testrunner
-  PRIVATE
-    -Wall
-    -Werror)
-
-target_include_directories(testrunner
-  PRIVATE
-    src
-    test)
-
-target_link_libraries(testrunner
-  PRIVATE
-    GTest::GTest)
-
-gtest_discover_tests(testrunner)
+add_subdirectory(library)
+add_subdirectory(program)
+add_subdirectory(testrunner)
