@@ -3,3 +3,5 @@ KaratsubaAlgorithm
   multiplication should use stack instead of recursion
 MergeSort
   algorithm shoud be stack based insted of recusrion based
+CountInversionsMergeSort
+  algorithm shoud be stack based insted of recusrion based
