@@ -18,7 +18,7 @@ $(bin_dir):
 all: program testrunner
 
 run: program
-	$(bin_dir)/program/program
+	cd $(bin_dir)/program && ./program
 
 test: testrunner
 	$(bin_dir)/testrunner/testrunner
