@@ -9,6 +9,10 @@ target_compile_options(library
     -Wall
     -Werror)
 
+target_link_libraries(library
+  PRIVATE
+    pthread)
+
 target_include_directories(library
   INTERFACE
     include

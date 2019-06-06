@@ -1,6 +1,10 @@
+#include <algorithm>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <iterator>
+#include <map>
+#include <sstream>
 #include <string>
 #include <vector>
 
@@ -21,23 +25,37 @@ int main(int argc, char** argv) {
     return 0;
   }
 
-  std::vector<ssize_t> data;
+  graph::AdjacencyLists data;
 
-  ssize_t number {};
-  while (1) {
-    file >> number;
+  std::string line;
+  while (std::getline(file, line)) {
+    std::istringstream line_stream (line);
 
-    if (file.eof()) {
-      break;
-    }
+    graph::Vertex vertex {};
+    graph::AdjacentVertices adjacent_vertices;
 
-    if (file.fail()) {
+    line_stream >> vertex;
+
+    std::copy(std::istream_iterator<graph::Vertex>(line_stream),
+              std::istream_iterator<graph::Vertex>(),
+              std::back_inserter(adjacent_vertices));
+
+    if (!line_stream.eof()) {
       std::cerr << "Error during reading file";
       return 0;
     }
 
-    data.push_back(number);
+    data.emplace(vertex, adjacent_vertices);
   }
+
+  if (!file.eof()) {
+      std::cerr << "Error during reading file";
+      return 0;
+  }
+
+  const auto answer = graph::MinCut(data);
+
+  std::cout << "Number of edges crossing min cut is " << answer << std::endl;
 
   return 0;
 }
