@@ -1,0 +1,47 @@
+Inline Question 1
+
+Notice the structured patterns in the distance matrix, where some rows or columns are visible brighter. (Note that with the default color scheme black indicates low distances while white indicates high distances.)
+
+What in the data is the cause behind the distinctly bright rows?
+What causes the columns?
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟:  There are images that are close to all training/test set
+             I suppose the wast majority of an image pixels approaches middle value (127) so square of the difference doesn't approach big values
+
+Inline Question 2
+
+We can also use other distance metrics such as L1 distance. For pixel values 𝑝(𝑘)𝑖𝑗 at location (𝑖,𝑗) of some image 𝐼𝑘,
+
+the mean 𝜇 across all pixels over all images is
+𝜇=1𝑛ℎ𝑤∑𝑘=1𝑛∑𝑖=1ℎ∑𝑗=1𝑤𝑝(𝑘)𝑖𝑗
+And the pixel-wise mean 𝜇𝑖𝑗 across all images is
+𝜇𝑖𝑗=1𝑛∑𝑘=1𝑛𝑝(𝑘)𝑖𝑗.
+The general standard deviation 𝜎 and pixel-wise standard deviation 𝜎𝑖𝑗 is defined similarly.
+
+Which of the following preprocessing steps will not change the performance of a Nearest Neighbor classifier that uses L1 distance? Select all that apply.
+
+Subtracting the mean 𝜇 (𝑝̃ (𝑘)𝑖𝑗=𝑝(𝑘)𝑖𝑗−𝜇.)
+Subtracting the per pixel mean 𝜇𝑖𝑗 (𝑝̃ (𝑘)𝑖𝑗=𝑝(𝑘)𝑖𝑗−𝜇𝑖𝑗.)
+Subtracting the mean 𝜇 and dividing by the standard deviation 𝜎.
+Subtracting the pixel-wise mean 𝜇𝑖𝑗 and dividing by the pixel-wise standard deviation 𝜎𝑖𝑗.
+Rotating the coordinate axes of the data.
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: No, no, no, yes, no
+Y𝑜𝑢𝑟𝐸𝑥𝑝𝑙𝑎𝑛𝑎𝑡𝑖𝑜𝑛: Subtracting the mean and dividing by the standart deviation don't affect overall performace because it affects each pixel of each image in the same way.
+                 Subtracting the per pixel mean doesn't affect the performance because it doesn't affect difference between pair of pixels
+                 Dividing by the pixel-wise standard deviation affects performace because pixels with high deviation will affect less algorithm performace and pixels with low deviation will affect perfomance more
+                 Rotating the coordinate doesn't affect performace because it only changes the order of the terms
+
+Inline Question 3
+
+Which of the following statements about  𝑘 -Nearest Neighbor ( 𝑘 -NN) are true in a classification setting, and for all  𝑘 ? Select all that apply.
+
+The decision boundary of the k-NN classifier is linear.
+The training error of a 1-NN will always be lower than that of 5-NN.
+The test error of a 1-NN will always be lower than that of a 5-NN.
+The time needed to classify a test example with the k-NN classifier grows with the size of the training set.
+None of the above.
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: No, yes, no, yes
+Y𝑜𝑢𝑟𝐸𝑥𝑝𝑙𝑎𝑛𝑎𝑡𝑖𝑜𝑛: No. It's possible to see on map for 2 featues k-NN.
+                 Yes. Because k-NN training error is zero on training set
+                 No. Because 5-NN may eliminate anomaly points
+                 Yes. Because k-NN calculate the distance to each element of the traning set at classification time
+
