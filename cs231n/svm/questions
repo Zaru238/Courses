@@ -1,0 +1,11 @@
+Inline Question 1
+
+It is possible that once in a while a dimension in the gradcheck will not match exactly. What could such a discrepancy be caused by? Is it a reason for concern? What is a simple example in one dimension where a gradient check could fail? How would change the margin affect of the frequency of this happening? Hint: the SVM loss function is not strictly speaking differentiable
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟:  ReLU function has a kink at x = 0. And when we numerically compute gradient where x approaches zero centered zero approximation may take measurement from two points - one below zero and one above zero - we try numerically compute kink point. IMHO we can predict where we try to take gradient of the kink point and notify user that calculation is incorrect
+
+Inline question 2
+
+Describe what your visualized SVM weights look like, and offer a brief explanation for why they look they way that they do.
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: Best result is achived with hyperparameters learning rate 1e-07 and reqularization 1e+04. Moving away from this model with such hyperparameters proportionally dicreases final test accuracy. We choose the best learing rate for selected iter_count - when learing rate is too small gradient discent doesn't arriva at best minumum point. When learning rate is too big it cannot reach exact minimum and bounces around it. We also chose the best reqularization strength - we don't overfit or underfit our model.
