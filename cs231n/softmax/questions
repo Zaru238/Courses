@@ -1,0 +1,12 @@
+nline Question 1
+
+Why do we expect our loss to be close to -log(0.1)? Explain briefly.**
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟:  Because weights are randomly generated. And new weights are normally distributed. Taking into account big dimension (3072) and big amount of train samples  each class gets approximately the same probability. So the average probability of each class is 0.1
+
+Inline Question 2 - True or False
+
+Suppose the overall training loss is defined as the sum of the per-datapoint loss over all training examples. It is possible to add a new datapoint to a training set that would leave the SVM loss unchanged, but this is not the case with the Softmax classifier loss.
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: True
+Y𝑜𝑢𝑟𝐸𝑥𝑝𝑙𝑎𝑛𝑎𝑡𝑖𝑜𝑛: Suppose that we add datapoint to the cat picture whose new datapoint value is 5. And we have weight for cat for this pixel is 10 and as dog is 5. Final score for cat is 50 and dog is 25. It's ok for svm so it doesn't affect it but it doesn't ok for softmax because it affects the total for a dog chance.
