@@ -123,51 +123,48 @@ class TwoLayerNet(object):
 
         dW2 = np.zeros_like(W2)
         db2 = np.zeros_like(b2)
+        dX2 = np.zeros_like(first_activ)
+
         dW1 = np.zeros_like(W1)
         db1 = np.zeros_like(b1)
 
-        dX2 = np.zeros_like(first_activ)
+        #Compute weights
 
-        # dW2 dividend calculation
-        for i in range(N):
-            true_label = y[i]
-            forw_quotient = -1/(exp_quot[i])
-            forw_divider = exp_sum[i]
-            back_exp = np.exp(scores[i, true_label])
+        # Train to labels
+        TtL = np.zeros((N, C))
+        TtL[range(N), y] = 1
 
-            term = forw_quotient / forw_divider * back_exp
+        # First term of divide derivative for output layer
+        forw_quotient = -1/exp_quot
+        forw_divider = exp_sum
+        back_exp = np.exp(scores[range(N), y])
 
-            dW2[:,true_label] += first_activ[i] * term
-            db2[true_label] += term
+        factor = forw_quotient / forw_divider * back_exp
 
-            dX2[i] += W2[:,true_label] * term
+        dW2 = (first_activ * np.expand_dims(factor, axis=1)).T.dot(TtL)
+        db2 = factor.dot(TtL)
+        dX2 = TtL.dot(W2.T) * factor[..., np.newaxis]
 
-        # dW2 divider calculation
-        for i in range(N):
-            forw_quotient = -1/(exp_quot[i])
-            forw_dividend = exp_true[i]
-            forw_divider = exp_sum[i]
-            back_exp = np.exp(scores[i])
+        # Second term of divide derivation for output layer
+        forw_quotient = -1/exp_quot
+        forw_dividend = exp_true
+        forw_divider = exp_sum
+        back_exp = np.exp(scores)
 
-            term = forw_quotient * forw_dividend / (forw_divider ** 2) * back_exp
+        factor = back_exp * np.expand_dims(forw_quotient * forw_dividend / (forw_divider ** 2), 1)
 
-            dW2 -= np.broadcast_to(np.expand_dims(first_activ[i], axis=1), W2.shape) * term
-            db2 -= term
-
-            dX2[i] -= np.sum((W2 * term), axis=1)
+        dW2 -= first_activ.T.dot(factor)
+        db2 -= np.sum(factor, axis=0)
+        dX2 -= factor.dot(W2.T)
 
         dW2 = dW2/N + reg * 2 * W2
         db2 /= N
 
         # Calculate dW1 and db1
-
         dX2 *= first_neurons >= 0
 
-        for i in range(N):
-            db1 += dX2[i]
-
-            for j in range(H):
-                dW1[:,j] += X[i] * dX2[i,j]
+        db1 = np.sum(dX2, axis=0)
+        dW1 = X.T.dot(dX2)
 
         dW1 = dW1/N + reg * 2 * W1
         db1 /=N
