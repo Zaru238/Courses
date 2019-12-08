@@ -1,0 +1,23 @@
+Explain your hyperparameter tuning process below.
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: There are five hyperparameters - hidden layer size, iteration count, batch size, regularization strength and learning rate. Iteration count and learning rate connected with each other. I will write code that iterates over three arrays of hyperparameters (i will do it twice) and choose the hyperparameters with the best result. Than I decrease the hyperparameter step and repeat these operations. Than I plot train/test over iterations and plot loss function over iterations
+
+After training I change tuning process in the following way:
+Initially try to choose good learning rate - it should be quite big and produce discendend function loss value over iteration value - traidof is training speed over convergence
+Than u choose batch size as big as possible - tradeof is quickier convergence over speed of each train iteration
+Hidden size actually is main hyperparameter - we should build model for each hidden train value and see how they converge
+Iteration count - isn't actually a "true" hyperparameter - we should train network with enormous amount of iterations (like 10000) and see when it stop converge
+Regularization strength - allows us to fight with overfitting - when train set performance is too big and test set is too small. I think it's possble to fight with overfitting by reducing zise of hidden unit
+
+
+Inline Question
+
+Now that you have trained a Neural Network classifier, you may find that your testing accuracy is much lower than the training accuracy. In what ways can we decrease this gap? Select all that apply.
+
+Train on a larger dataset.
+Add more hidden units.
+Increase the regularization strength.
+None of the above.
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: Train on a larger dataset and increase the regularization strength
+Y𝑜𝑢𝑟𝐸𝑥𝑝𝑙𝑎𝑛𝑎𝑡𝑖𝑜𝑛: There is a symptom of overfitting - model capacity is too big for dataset. Larger dataset allows to fulfill model capacity. Increasing regularization forces model to ingore corner cases and find general biases - thus forces it to generalize
