@@ -1,0 +1,6 @@
+Inline question 1:
+Describe the misclassification results that you see. Do they make sense?
+
+Y𝑜𝑢𝑟𝐴𝑛𝑠𝑤𝑒𝑟: Yes, facture and color scheme of the miscassified pictures look right.
+But object color and background color of some images are swapped.
+Pictures with non-swapped colors look close to the regular "cat" or "plane" - model isn't saturated.
