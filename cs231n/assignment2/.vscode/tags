@@ -1,0 +1,125 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+FullyConnectedNet	../cs231n/classifiers/fc_net.py	/^class FullyConnectedNet(object):$/;"	kind:class	line:132
+Solver	../cs231n/solver.py	/^class Solver(object):$/;"	kind:class	line:14
+ThreeLayerConvNet	../cs231n/classifiers/cnn.py	/^class ThreeLayerConvNet(object):$/;"	kind:class	line:9
+TwoLayerNet	../cs231n/classifiers/fc_net.py	/^class TwoLayerNet(object):$/;"	kind:class	line:9
+__init__	../cs231n/classifiers/cnn.py	/^    def __init__(self, input_dim=(3, 32, 32), num_filters=32, filter_size=7,$/;"	kind:member	line:20
+__init__	../cs231n/classifiers/fc_net.py	/^    def __init__(self, hidden_dims, input_dim=3*32*32, num_classes=10,$/;"	kind:member	line:148
+__init__	../cs231n/classifiers/fc_net.py	/^    def __init__(self, input_dim=3*32*32, hidden_dim=100, num_classes=10,$/;"	kind:member	line:25
+__init__	../cs231n/solver.py	/^    def __init__(self, model, data, **kwargs):$/;"	kind:member	line:82
+__init__.py	../cs231n/__init__.py	1;"	kind:file	line:1
+__init__.py	../cs231n/classifiers/__init__.py	1;"	kind:file	line:1
+_reset	../cs231n/solver.py	/^    def _reset(self):$/;"	kind:member	line:150
+_save_checkpoint	../cs231n/solver.py	/^    def _save_checkpoint(self):$/;"	kind:member	line:194
+_step	../cs231n/solver.py	/^    def _step(self):$/;"	kind:member	line:170
+adam	../cs231n/optim.py	/^def adam(w, dw, config=None):$/;"	kind:function	line:118
+affine_backward	../cs231n/layers.py	/^def affine_backward(dout, cache):$/;"	kind:function	line:41
+affine_forward	../cs231n/layers.py	/^def affine_forward(x, w, b):$/;"	kind:function	line:5
+affine_relu_backward	../cs231n/layer_utils.py	/^def affine_relu_backward(dout, cache):$/;"	kind:function	line:23
+affine_relu_forward	../cs231n/layer_utils.py	/^def affine_relu_forward(x, w, b):$/;"	kind:function	line:5
+batchnorm_backward	../cs231n/layers.py	/^def batchnorm_backward(dout, cache):$/;"	kind:function	line:236
+batchnorm_backward_alt	../cs231n/layers.py	/^def batchnorm_backward_alt(dout, cache):$/;"	kind:function	line:272
+batchnorm_forward	../cs231n/layers.py	/^def batchnorm_forward(x, gamma, beta, bn_param):$/;"	kind:function	line:134
+check_accuracy	../cs231n/solver.py	/^    def check_accuracy(self, X, y, num_samples=None, batch_size=100):$/;"	kind:member	line:216
+cnn.py	../cs231n/classifiers/cnn.py	1;"	kind:file	line:1
+col2im_6d_cython	../cs231n/im2col_cython.pyx	/^def col2im_6d_cython(np.ndarray[DTYPE_t, ndim=6] cols, int N, int C, int H, int W,$/;"	kind:function	line:109
+col2im_6d_cython_inner	../cs231n/im2col_cython.pyx	/^cdef col2im_6d_cython_inner(np.ndarray[DTYPE_t, ndim=6] cols,$/;"	kind:function	line:94
+col2im_cython	../cs231n/im2col_cython.pyx	/^def col2im_cython(np.ndarray[DTYPE_t, ndim=2] cols, int N, int C, int H, int W,$/;"	kind:function	line:57
+col2im_cython_inner	../cs231n/im2col_cython.pyx	/^cdef int col2im_cython_inner(np.ndarray[DTYPE_t, ndim=2] cols,$/;"	kind:function	line:75
+col2im_indices	../cs231n/im2col.py	/^def col2im_indices(cols, x_shape, field_height=3, field_width=3, padding=1,$/;"	kind:function	line:41
+conv_backward_fast	../cs231n/fast_layers.py	/^conv_backward_fast = conv_backward_strides$/;"	kind:variable	line:152
+conv_backward_im2col	../cs231n/fast_layers.py	/^def conv_backward_im2col(dout, cache):$/;"	kind:function	line:129
+conv_backward_naive	../cs231n/layers.py	/^def conv_backward_naive(dout, cache):$/;"	kind:function	line:526
+conv_backward_pytorch	../cs231n/fast_layers.py	/^def conv_backward_pytorch(dout, cache):$/;"	kind:function	line:57
+conv_backward_strides	../cs231n/fast_layers.py	/^def conv_backward_strides(dout, cache):$/;"	kind:function	line:109
+conv_bn_relu_backward	../cs231n/layer_utils.py	/^def conv_bn_relu_backward(dout, cache):$/;"	kind:function	line:69
+conv_bn_relu_forward	../cs231n/layer_utils.py	/^def conv_bn_relu_forward(x, w, b, gamma, beta, conv_param, bn_param):$/;"	kind:function	line:61
+conv_forward_fast	../cs231n/fast_layers.py	/^conv_forward_fast = conv_forward_strides$/;"	kind:variable	line:151
+conv_forward_im2col	../cs231n/fast_layers.py	/^def conv_forward_im2col(x, w, b, conv_param):$/;"	kind:function	line:16
+conv_forward_naive	../cs231n/layers.py	/^def conv_forward_naive(x, w, b, conv_param):$/;"	kind:function	line:481
+conv_forward_pytorch	../cs231n/fast_layers.py	/^def conv_forward_pytorch(x, w, b, conv_param):$/;"	kind:function	line:45
+conv_forward_strides	../cs231n/fast_layers.py	/^def conv_forward_strides(x, w, b, conv_param):$/;"	kind:function	line:65
+conv_relu_backward	../cs231n/layer_utils.py	/^def conv_relu_backward(dout, cache):$/;"	kind:function	line:51
+conv_relu_forward	../cs231n/layer_utils.py	/^def conv_relu_forward(x, w, b, conv_param):$/;"	kind:function	line:33
+conv_relu_pool_backward	../cs231n/layer_utils.py	/^def conv_relu_pool_backward(dout, cache):$/;"	kind:function	line:97
+conv_relu_pool_forward	../cs231n/layer_utils.py	/^def conv_relu_pool_forward(x, w, b, conv_param, pool_param):$/;"	kind:function	line:77
+data_utils.py	../cs231n/data_utils.py	1;"	kind:file	line:1
+dropout_backward	../cs231n/layers.py	/^def dropout_backward(dout, cache):$/;"	kind:function	line:452
+dropout_forward	../cs231n/layers.py	/^def dropout_forward(x, dropout_param):$/;"	kind:function	line:387
+eval_numerical_gradient	../cs231n/gradient_check.py	/^def eval_numerical_gradient(f, x, verbose=True, h=0.00001):$/;"	kind:function	line:8
+eval_numerical_gradient_array	../cs231n/gradient_check.py	/^def eval_numerical_gradient_array(f, x, df, h=1e-5):$/;"	kind:function	line:39
+eval_numerical_gradient_blobs	../cs231n/gradient_check.py	/^def eval_numerical_gradient_blobs(f, inputs, output, h=1e-5):$/;"	kind:function	line:61
+eval_numerical_gradient_net	../cs231n/gradient_check.py	/^def eval_numerical_gradient_net(net, inputs, output, h=1e-5):$/;"	kind:function	line:103
+extensions	../cs231n/setup.py	/^extensions = [$/;"	kind:variable	line:6
+fast_layers.py	../cs231n/fast_layers.py	1;"	kind:file	line:1
+fc_net.py	../cs231n/classifiers/fc_net.py	1;"	kind:file	line:1
+get_CIFAR10_data	../cs231n/data_utils.py	/^def get_CIFAR10_data(num_training=49000, num_validation=1000, num_test=1000,$/;"	kind:function	line:44
+get_im2col_indices	../cs231n/im2col.py	/^def get_im2col_indices(x_shape, field_height, field_width, padding=1, stride=1):$/;"	kind:function	line:5
+grad_check_sparse	../cs231n/gradient_check.py	/^def grad_check_sparse(f, x, analytic_grad, num_checks=10, h=1e-5):$/;"	kind:function	line:108
+gradient_check.py	../cs231n/gradient_check.py	1;"	kind:file	line:1
+im2col.py	../cs231n/im2col.py	1;"	kind:file	line:1
+im2col_cython	../cs231n/im2col_cython.pyx	/^def im2col_cython(np.ndarray[DTYPE_t, ndim=4] x, int field_height,$/;"	kind:function	line:12
+im2col_cython.pyx	../cs231n/im2col_cython.pyx	1;"	kind:file	line:1
+im2col_cython_inner	../cs231n/im2col_cython.pyx	/^cdef int im2col_cython_inner(np.ndarray[DTYPE_t, ndim=2] cols,$/;"	kind:function	line:39
+im2col_indices	../cs231n/im2col.py	/^def im2col_indices(x, field_height, field_width, padding=1, stride=1):$/;"	kind:function	line:26
+layer_utils.py	../cs231n/layer_utils.py	1;"	kind:file	line:1
+layernorm_backward	../cs231n/layers.py	/^def layernorm_backward(dout, cache):$/;"	kind:function	line:352
+layernorm_forward	../cs231n/layers.py	/^def layernorm_forward(x, gamma, beta, ln_param):$/;"	kind:function	line:307
+layers.py	../cs231n/layers.py	1;"	kind:file	line:1
+load_CIFAR10	../cs231n/data_utils.py	/^def load_CIFAR10(ROOT):$/;"	kind:function	line:28
+load_CIFAR_batch	../cs231n/data_utils.py	/^def load_CIFAR_batch(filename):$/;"	kind:function	line:18
+load_imagenet_val	../cs231n/data_utils.py	/^def load_imagenet_val(num=None):$/;"	kind:function	line:237
+load_models	../cs231n/data_utils.py	/^def load_models(models_dir):$/;"	kind:function	line:214
+load_pickle	../cs231n/data_utils.py	/^def load_pickle(f):$/;"	kind:function	line:10
+load_tiny_imagenet	../cs231n/data_utils.py	/^def load_tiny_imagenet(path, dtype=np.float32, subtract_mean=True):$/;"	kind:function	line:86
+loss	../cs231n/classifiers/cnn.py	/^    def loss(self, X, y=None):$/;"	kind:member	line:69
+loss	../cs231n/classifiers/fc_net.py	/^    def loss(self, X, y=None):$/;"	kind:member	line:225
+loss	../cs231n/classifiers/fc_net.py	/^    def loss(self, X, y=None):$/;"	kind:member	line:63
+max_pool_backward_fast	../cs231n/fast_layers.py	/^def max_pool_backward_fast(dout, cache):$/;"	kind:function	line:179
+max_pool_backward_im2col	../cs231n/fast_layers.py	/^def max_pool_backward_im2col(dout, cache):$/;"	kind:function	line:274
+max_pool_backward_naive	../cs231n/layers.py	/^def max_pool_backward_naive(dout, cache):$/;"	kind:function	line:589
+max_pool_backward_reshape	../cs231n/fast_layers.py	/^def max_pool_backward_reshape(dout, cache):$/;"	kind:function	line:216
+max_pool_forward_fast	../cs231n/fast_layers.py	/^def max_pool_forward_fast(x, pool_param):$/;"	kind:function	line:155
+max_pool_forward_im2col	../cs231n/fast_layers.py	/^def max_pool_forward_im2col(x, pool_param):$/;"	kind:function	line:247
+max_pool_forward_naive	../cs231n/layers.py	/^def max_pool_forward_naive(x, pool_param):$/;"	kind:function	line:554
+max_pool_forward_reshape	../cs231n/fast_layers.py	/^def max_pool_forward_reshape(x, pool_param):$/;"	kind:function	line:195
+nn	../cs231n/fast_layers.py	/^import torch.nn as nn$/;"	kind:namespace	line:4
+np	../cs231n/classifiers/cnn.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../cs231n/classifiers/fc_net.py	/^import numpy as np$/;"	kind:namespace	line:3
+np	../cs231n/data_utils.py	/^import numpy as np$/;"	kind:namespace	line:5
+np	../cs231n/fast_layers.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../cs231n/gradient_check.py	/^import numpy as np$/;"	kind:namespace	line:5
+np	../cs231n/im2col.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../cs231n/im2col_cython.pyx	/^cimport numpy as np$/;"	kind:namespace	line:2
+np	../cs231n/im2col_cython.pyx	/^import numpy as np$/;"	kind:namespace	line:1
+np	../cs231n/layers.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../cs231n/optim.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../cs231n/solver.py	/^import numpy as np$/;"	kind:namespace	line:9
+np	../cs231n/vis_utils.py	/^import numpy as np$/;"	kind:namespace	line:5
+optim.py	../cs231n/optim.py	1;"	kind:file	line:1
+pickle	../cs231n/data_utils.py	/^from six.moves import cPickle as pickle$/;"	kind:unknown	line:4
+pickle	../cs231n/solver.py	/^import pickle as pickle$/;"	kind:namespace	line:7
+relu_backward	../cs231n/layers.py	/^def relu_backward(dout, cache):$/;"	kind:function	line:108
+relu_forward	../cs231n/layers.py	/^def relu_forward(x):$/;"	kind:function	line:81
+rmsprop	../cs231n/optim.py	/^def rmsprop(w, dw, config=None):$/;"	kind:function	line:82
+setup.py	../cs231n/setup.py	1;"	kind:file	line:1
+sgd	../cs231n/optim.py	/^def sgd(w, dw, config=None):$/;"	kind:function	line:33
+sgd_momentum	../cs231n/optim.py	/^def sgd_momentum(w, dw, config=None):$/;"	kind:function	line:47
+softmax_loss	../cs231n/layers.py	/^def softmax_loss(x, y):$/;"	kind:function	line:788
+solver.py	../cs231n/solver.py	1;"	kind:file	line:1
+spatial_batchnorm_backward	../cs231n/layers.py	/^def spatial_batchnorm_backward(dout, cache):$/;"	kind:function	line:658
+spatial_batchnorm_forward	../cs231n/layers.py	/^def spatial_batchnorm_forward(x, gamma, beta, bn_param):$/;"	kind:function	line:615
+spatial_groupnorm_backward	../cs231n/layers.py	/^def spatial_groupnorm_backward(dout, cache):$/;"	kind:function	line:731
+spatial_groupnorm_forward	../cs231n/layers.py	/^def spatial_groupnorm_forward(x, gamma, beta, G, gn_param):$/;"	kind:function	line:692
+svm_loss	../cs231n/layers.py	/^def svm_loss(x, y):$/;"	kind:function	line:761
+train	../cs231n/solver.py	/^    def train(self):$/;"	kind:member	line:257
+vis_grid	../cs231n/vis_utils.py	/^def vis_grid(Xs):$/;"	kind:function	line:41
+vis_nn	../cs231n/vis_utils.py	/^def vis_nn(rows):$/;"	kind:function	line:59
+vis_utils.py	../cs231n/vis_utils.py	1;"	kind:file	line:1
+visualize_grid	../cs231n/vis_utils.py	/^def visualize_grid(Xs, ubound=255.0, padding=1):$/;"	kind:function	line:7
