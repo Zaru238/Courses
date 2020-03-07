@@ -196,6 +196,9 @@ class FullyConnectedNet(object):
         for hidden_dim in hidden_dims:
             self.params["W" + str(layer_number)] = np.random.normal(0, weight_scale, (previous_dim, hidden_dim))
             self.params["b" + str(layer_number)] = np.zeros(hidden_dim)
+            if self.normalization=='batchnorm' or self.normalization == 'layernorm':
+                self.params["gamma" + str(layer_number)] = np.ones(hidden_dim)
+                self.params["beta" + str(layer_number)] = np.zeros(hidden_dim)
             previous_dim = hidden_dim
             layer_number += 1
 
@@ -266,8 +269,14 @@ class FullyConnectedNet(object):
 
         out = X
         for i in range(1, self.num_layers):
-            affine_out, caches[f"affine{i}"] = affine_forward(out, self.params[f"W{i}"], self.params[f"b{i}"])
-            out, caches[f"relu{i}"] = relu_forward(affine_out)
+            act_in, caches[f"affine{i}"] = affine_forward(out, self.params[f"W{i}"], self.params[f"b{i}"])
+            if self.normalization=='batchnorm':
+                act_in, caches[f"batchnorm{i}"] = batchnorm_forward(act_in, self.params[f"gamma{i}"], self.params[f"beta{i}"], self.bn_params[i - 1])
+
+            if self.normalization=='layernorm':
+                act_in, caches[f'layernorm{i}'] = layernorm_forward(act_in, self.params[f"gamma{i}"], self.params[f"beta{i}"], self.bn_params[i - 1])
+
+            out, caches[f"relu{i}"] = relu_forward(act_in)
 
         scores, cache_out_layer = affine_forward(out, self.params[f"W{self.num_layers}"], self.params[f"b{self.num_layers}"])
 
@@ -301,8 +310,15 @@ class FullyConnectedNet(object):
         out_dx, grads[f"W{self.num_layers}"], grads[f"b{self.num_layers}"] = affine_backward(loss_dx, cache_out_layer)
 
         for i in range(self.num_layers -1, 0, -1):
-            relu_out_dx = relu_backward(out_dx, caches[f"relu{i}"])
-            out_dx, grads[f"W{i}"], grads[f"b{i}"] = affine_backward(relu_out_dx, caches[f"affine{i}"])
+            affine_in = relu_backward(out_dx, caches[f"relu{i}"])
+
+            if self.normalization=='batchnorm':
+                affine_in, grads[f"gamma{i}"], grads[f"beta{i}"] = batchnorm_backward_alt(affine_in, caches[f"batchnorm{i}"])
+
+            if self.normalization=='layernorm':
+                affine_in, grads[f"gamma{i}"], grads[f"beta{i}"] = layernorm_backward(affine_in, caches[f"layernorm{i}"])
+
+            out_dx, grads[f"W{i}"], grads[f"b{i}"] = affine_backward(affine_in, caches[f"affine{i}"])
 
         # Regularization
         loss += 0.5 * self.reg * sum(np.sum(self.params[f"W{i + 1}"] ** 2) for i in range(self.num_layers))

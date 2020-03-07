@@ -177,7 +177,8 @@ def batchnorm_forward(x, gamma, beta, bn_param):
     running_mean = bn_param.get('running_mean', np.zeros(D, dtype=x.dtype))
     running_var = bn_param.get('running_var', np.zeros(D, dtype=x.dtype))
 
-    out, cache = None, None
+    out = None
+    cache = {}
     if mode == 'train':
         #######################################################################
         # TODO: Implement the training-time forward pass for batch norm.      #
@@ -196,13 +197,31 @@ def batchnorm_forward(x, gamma, beta, bn_param):
         #                                                                     #
         # Note that though you should be keeping track of the running         #
         # variance, you should normalize the data based on the standard       #
-        # deviation (square root of variance) instead!                        # 
+        # deviation (square root of variance) instead!                        #
         # Referencing the original paper (https://arxiv.org/abs/1502.03167)   #
         # might prove to be helpful.                                          #
         #######################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
+        sample_mean = x.mean(axis=0)
+        sample_var = x.var(axis=0)
+
+        running_mean = momentum * running_mean + (1 - momentum) * sample_mean
+        running_var = momentum * running_var + (1 - momentum) * sample_var
+
+        dividend = x - sample_mean
+        divider = np.sqrt(sample_var + eps)
+        norm_out = dividend/divider
+        out = gamma * norm_out + beta
+
+        cache['x'] = x
+        cache['norm_out'] = norm_out
+        cache['gamma'] = gamma
+        cache['dividend'] = dividend
+        cache['divider'] = divider
+        cache['sample_mean'] = sample_mean
+        cache['sample_var'] = sample_var
+
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         #######################################################################
@@ -217,7 +236,8 @@ def batchnorm_forward(x, gamma, beta, bn_param):
         #######################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
+        norm_out = (x - running_mean)/np.sqrt(running_var + eps)
+        out = gamma * norm_out + beta
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         #######################################################################
@@ -259,7 +279,33 @@ def batchnorm_backward(dout, cache):
     ###########################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    n, d = dout.shape
+
+    dbeta = np.sum(dout, axis=0)
+    dgamma = np.sum(cache['norm_out'] * dout, axis=0)
+    dx = np.zeros(dout.shape)
+
+
+    # first division term
+    ddivision_prev = cache['gamma'] * dout
+    ddivision_prev_sum = np.sum(ddivision_prev, axis=0) / n
+
+    divider = cache['divider']
+    ddivision = (ddivision_prev - ddivision_prev_sum) / divider
+    dx = ddivision
+
+
+    # second division term
+    # ddivision_prev and dividend
+    dpd = cache['gamma'] * dout * cache['dividend']
+    dpd_sum = np.sum(dpd, axis=0)
+
+    ddivider_var = 2/n * (cache['x'] - cache['sample_mean'])
+    ddivider_sqrt = 1/(2 * cache['divider'])
+    ddivider = ddivider_var * ddivider_sqrt
+    divider = cache['divider']
+
+    dx -= dpd_sum * ddivider / (divider ** 2)
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ###########################################################################
@@ -294,7 +340,14 @@ def batchnorm_backward_alt(dout, cache):
     ###########################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    n, d = dout.shape
+
+    dgamma = np.sum(cache['norm_out'] * dout, axis=0)
+    dbeta = np.sum(dout, axis=0)
+
+    edout = dout * cache['gamma']
+
+    dx = (edout - np.sum(edout, axis=0)/n - cache['norm_out'] * np.sum(cache['norm_out'] * edout, axis=0)/n)/cache['divider']
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ###########################################################################
@@ -340,7 +393,21 @@ def layernorm_forward(x, gamma, beta, ln_param):
     ###########################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    N, D = x.shape
+
+    mean = np.sum(x, axis=1, keepdims=True) / D
+    variance = np.sum((x - mean) ** 2, axis=1, keepdims=True) / D
+
+    v = np.sqrt(variance - eps)
+
+    norm_out = (x - mean) / v
+
+    out = gamma * norm_out + beta
+
+    cache = {}
+    cache["norm_out"] = norm_out
+    cache["v"] = v
+    cache["gamma"] = gamma
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ###########################################################################
@@ -375,7 +442,15 @@ def layernorm_backward(dout, cache):
     ###########################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    N, D = dout.shape
+
+    dbeta = np.sum(dout, axis=0)
+    dgamma = np.sum(dout * cache["norm_out"], axis=0)
+
+    edout = dout * cache["gamma"]
+
+    # dx = (edout - np.sum(edout, axis=1)/D - cache["norm_out"] * np.sum(cache["norm_out"], axis=1)/D) / (cache["v"][..., np.newaxis])
+    dx = (edout - np.sum(edout, axis=1, keepdims=True)/D - cache["norm_out"] * np.sum(cache["norm_out"] * edout, axis=1, keepdims=True)/D) / cache["v"]
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ###########################################################################
