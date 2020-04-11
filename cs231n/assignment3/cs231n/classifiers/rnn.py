@@ -144,13 +144,23 @@ class CaptioningRNN(object):
 
         initial_hidden_state, in_hidden_cache = affine_forward(features, W_proj, b_proj)
         captions_vec, cap_vec_cache = word_embedding_forward(captions_in, W_embed)
-        rnn_out, rnn_cache = rnn_forward(captions_vec, initial_hidden_state, Wx, Wh, b)
+
+        if self.cell_type == "rnn":
+            rnn_out, rnn_cache = rnn_forward(captions_vec, initial_hidden_state, Wx, Wh, b)
+        else:
+            rnn_out, rnn_cache = lstm_forward(captions_vec, initial_hidden_state, Wx, Wh, b)
+
         word_out, word_out_cache = temporal_affine_forward(rnn_out, W_vocab, b_vocab)
 
         loss, d_temp_affine = temporal_softmax_loss(word_out, captions_out, mask)
 
         d_rnn, grads["W_vocab"], grads["b_vocab"] = temporal_affine_backward(d_temp_affine, word_out_cache)
-        d_capt_vec, d_in_hidden, grads["Wx"], grads["Wh"], grads["b"] = rnn_backward(d_rnn, rnn_cache)
+
+        if self.cell_type == "rnn":
+            d_capt_vec, d_in_hidden, grads["Wx"], grads["Wh"], grads["b"] = rnn_backward(d_rnn, rnn_cache)
+        else:
+            d_capt_vec, d_in_hidden, grads["Wx"], grads["Wh"], grads["b"] = lstm_backward(d_rnn, rnn_cache)
+
         grads["W_embed"] = word_embedding_backward(d_capt_vec, cap_vec_cache)
         _, grads["W_proj"], grads["b_proj"] = affine_backward(d_in_hidden, in_hidden_cache)
 
@@ -223,10 +233,16 @@ class CaptioningRNN(object):
 
         word = np.repeat(self._start, features.shape[0])
         hidden_state, _ = affine_forward(features, W_proj, b_proj)
+        cell_state = np.zeros_like(hidden_state)
 
         for i in range(max_length):
             word_embedded, _ = word_embedding_forward(word, W_embed)
-            hidden_state, _ = rnn_step_forward(word_embedded, hidden_state, Wx, Wh, b)
+
+            if self.cell_type == "rnn":
+                hidden_state, _ = rnn_step_forward(word_embedded, hidden_state, Wx, Wh, b)
+            else:
+                hidden_state, cell_state, _ = lstm_step_forward(word_embedded, hidden_state, cell_state, Wx, Wh, b)
+
             word_prob, _ = affine_forward(hidden_state, W_vocab, b_vocab)
             word = word_prob.argmax(axis=1)
 

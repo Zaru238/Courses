@@ -311,6 +311,7 @@ def lstm_step_forward(x, prev_h, prev_c, Wx, Wh, b):
     - prev_c: previous cell state, of shape (N, H)
     - Wx: Input-to-hidden weights, of shape (D, 4H)
     - Wh: Hidden-to-hidden weights, of shape (H, 4H)
+    cache["af"] = af
     - b: Biases, of shape (4H,)
 
     Returns a tuple of:
@@ -325,7 +326,40 @@ def lstm_step_forward(x, prev_h, prev_c, Wx, Wh, b):
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    activation_vec = x.dot(Wx) + prev_h.dot(Wh) + b
+
+    ai, af, ao, ag = np.split(activation_vec, 4, axis=1)
+
+    i = sigmoid(ai)
+    f = sigmoid(af)
+    o = sigmoid(ao)
+    g = np.tanh(ag)
+
+    next_c = f *prev_c + i * g
+    next_c_tanh = np.tanh(next_c)
+    next_h = o * next_c_tanh
+
+    cache  = {}
+
+    cache["x"] = x
+    cache["Wx"] = Wx
+    cache["prev_h"] = prev_h
+    cache["Wh"] = Wh
+
+    cache["ai"] = ai
+    cache["af"] = af
+    cache["ao"] = ao
+    cache["ag"] = ag
+
+    cache["i"] = i
+    cache["f"] = f
+    cache["o"] = o
+    cache["g"] = g
+
+    cache["prev_c"] = prev_c
+    cache["next_c"] = next_c
+    cache["next_c_tanh"] = next_c_tanh
+    cache["next_h"] = next_h
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ##############################################################################
@@ -361,7 +395,28 @@ def lstm_step_backward(dnext_h, dnext_c, cache):
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    do = cache["next_c_tanh"] * dnext_h
+    dnext_c_tanh = cache["o"] * dnext_h
+    dnext_c = (1 - np.tanh(cache["next_c"]) ** 2) * dnext_c_tanh + dnext_c
+
+    dprev_c = cache["f"] * dnext_c
+    df = cache["prev_c"] * dnext_c
+    di = cache["g"] * dnext_c
+    dg = cache["i"] * dnext_c
+
+    dai = sigmoid(cache["ai"]) * (1 - sigmoid(cache["ai"])) * di
+    daf = sigmoid(cache["af"]) * (1 - sigmoid(cache["af"])) * df
+    dao = sigmoid(cache["ao"]) * (1 - sigmoid(cache["ao"])) * do
+    dag = (1 - np.tanh(cache["ag"]) ** 2) * dg
+
+    dact_vec = np.concatenate((dai, daf, dao, dag), axis=1)
+
+    dWx = cache["x"].T.dot(dact_vec)
+    dx = dact_vec.dot(cache["Wx"].T)
+    dWh = cache["prev_h"].T.dot(dact_vec)
+    dprev_h = dact_vec.dot(cache["Wh"].T)
+
+    db = np.sum(dact_vec, axis=0)
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ##############################################################################
@@ -400,7 +455,20 @@ def lstm_forward(x, h0, Wx, Wh, b):
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    N, T, D = x.shape
+    N, H = h0.shape
+
+    cell_step = np.zeros((N, H))
+    h_step = h0
+
+    h = np.empty((N, T, H))
+    cache = []
+
+    for i in range(T):
+        h_step, cell_step, cache_step = lstm_step_forward(x[:, i, :], h_step, cell_step, Wx, Wh, b)
+
+        h[:, i, :] = h_step
+        cache.append(cache_step)
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ##############################################################################
@@ -432,7 +500,28 @@ def lstm_backward(dh, cache):
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    T = len(cache)
+    N, D = cache[0]["x"].shape
+    N, H = cache[0]["next_h"].shape
+
+    dx = np.empty((N, T, D))
+    dWx = np.zeros((D, 4 * H))
+    dWh = np.zeros((H, 4 * H))
+    db = np.zeros(4 * H)
+
+    dc_step = np.zeros((N, H))
+    dh_step = np.zeros((N, H))
+
+    for i in reversed(range(T)):
+        dh_step += dh[:, i, :]
+        dx_step, dh_step, dc_step, dWx_step, dWh_step, db_step = lstm_step_backward(dh_step, dc_step, cache[i])
+
+        dx[:, i, :] = dx_step
+        dWx += dWx_step
+        dWh += dWh_step
+        db += db_step
+
+    dh0 = dh_step
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     ##############################################################################
