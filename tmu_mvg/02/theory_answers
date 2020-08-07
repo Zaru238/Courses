@@ -1,0 +1,13 @@
+1. A is symmetric matrix, y1 and y2 is eigenvalues of A, v1 and v2 are corresponding eigenvectors. Prave that if v1 and v2 aren't orthogonal than y1 == y2
+
+Lets check <Av1, v2>. It equals some constant since v1 and v2 isn't orthogonal.
+<Av1, v2> = c
+<y1v1, v2> = c
+y1<v1, v2> = c (1)
+
+Actually inner product is matrix multiplication row vector by column vector and taking into account that A is symmetric matrix we can rewrite it to
+<v1, Av2> = c
+<v1, y2v2> = c
+y2<v1, v2> = c (2)
+
+So, y1 = y2 from (1) and (2)

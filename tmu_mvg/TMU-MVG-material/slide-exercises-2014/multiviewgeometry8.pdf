@@ -1,0 +1,5873 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META http-equiv="Page-Enter" content="blendTrans(Duration=0.2)">
+<META http-equiv="Page-Exit" content="blendTrans(Duration=0.2)">
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2014-07-02T22:06:03+0200"/>
+<meta name="keywords" content="teaching,ss2014,mvg2014,material,Lectures"/>
+<meta name="description" content="Lectures
+Lectures
+ Date Lecture Slides  09.04.2014  [Introduction]  10.04.2014  [Chapter 1 - Mathematical Background]   24.04.2014  [Chapter 2 - Representing a Moving Scene]  07.05.2014  [Chapter 3 - Perspective Projection]  08.05.2014  [Chapter 4 - Estimating Point Correspondence]  15.05.2014  [Chapter 5 - Reconstruction from Two Views: Linear Algorithms]  28.05.2014  Current Research: [Semi-Dense monocular SLAM] Video
+[Spatio-Temporal Reconstruction and Connectivity Constraints] Video  04.06.2014  [Cha…"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Computer Vision Group"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/teaching/ss2014/mvg2014/material?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="/feed.php?mode=list&amp;ns=teaching:ss2014:mvg2014"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/teaching/ss2014/mvg2014/material"/>
+<link rel="canonical" href="http://vision.in.tum.de/teaching/ss2014/mvg2014/material"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=inf9&amp;tseed=b03ede04da1a848e3d7de5577a729987"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='teaching:ss2014:mvg2014';var JSINFO = {"id":"teaching:ss2014:mvg2014:material","namespace":"teaching:ss2014:mvg2014"};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=b03ede04da1a848e3d7de5577a729987"></script>
+<script type="text/javascript">/*<![CDATA[*/var hostnames = [ 'vision.cs.tum.edu','vision.informatik.tu-muenchen.de','vision','vision','cvpr.cs.tum.edu','cvpr.informatik.tu-muenchen.de','cvpr' ];
+/*!]]>*/</script>
+<script type="text/javascript" src="/lib/plugins/inf9/ddwindowlinks.js"></script>
+
+<title>Computer Vision Group - Lectures</title>
+<script type='text/javascript'>var NS='teaching:ss2014:mvg2014:material';</script>
+<link rel='stylesheet' media='screen' type='text/css' href='/lib/tpl/inf9/css.php' />
+<script src='/lib/tpl/inf9/js.php' type='text/javascript' />
+<script type='text/javascript'>var NS='teaching:ss2014:mvg2014:material';</script>
+<link rel='shortcut icon' href='/lib/tpl/inf9/images/favicon.ico' />
+<script type="text/javascript">
+function showhide(obj)
+{
+	if ( obj.style.display == 'none' )
+	{
+		obj.style.display='';
+		obj.parentNode.setAttribute("class","open childs");
+		}
+	else
+	{
+		obj.style.display='none';
+		obj.parentNode.setAttribute("class","childs");
+		}
+}
+</script>
+</head><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1303910649
+            [modified] => 1303910649
+        )
+
+    [creator] => Juergen Sturm
+    [last_change] => Array
+        (
+            [date] => 1303910649
+            [ip] => 131.159.18.129
+            [type] => C
+            [id] => publications:bytype
+            [user] => sturmju
+            [sum] => created
+            [extra] => 
+        )
+
+    [user] => 
+    [sortby] => title
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => incollection
+            [1] => articles
+            [2] => inproceedings
+            [3] => other
+            [4] => 
+        )
+
+    [title] => By Type
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => by_type
+                            [title] => By Type
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Please select the publication type in the navigation bar to the left.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [relation] => Array
+        (
+            [firstimage] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1303910143
+            [modified] => 1303910661
+        )
+
+    [creator] => Quirin Lohr
+    [last_change] => Array
+        (
+            [date] => 1303910661
+            [ip] => 131.159.18.129
+            [type] => E
+            [id] => publications:byyear
+            [user] => sturmju
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+        )
+
+    [user] => 
+    [sortby] => page
+    [sorthow] => desc
+    [title] => By Year
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => by_year
+                            [title] => By Year
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Please select the publication year in the navigation bar to the left.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [relation] => Array
+        (
+            [firstimage] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1425628600
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1425628600
+            [ip] => 131.159.19.188
+            [type] => E
+            [id] => publications
+            [user] => lohr
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+        )
+
+    [user] => 
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => bytype
+            [1] => byyear
+            [2] => search
+        )
+
+    [title] => Publications
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+    [relation] => Array
+        (
+            [firstimage] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1312276379
+            [modified] => 1432075675
+        )
+
+    [creator] => 
+    [user] => 
+    [last_change] => Array
+        (
+            [date] => 1432075675
+            [ip] => 92.227.13.105
+            [type] => E
+            [id] => research:image-based_3d_reconstruction
+            [user] => stueckle
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [klodt] => Maria Klodt
+            [oswaldm] => Martin Oswald
+            [kolev] => Kalin Kolev
+            [stueckle] => Jörg Stückler
+        )
+
+    [title] => Image-based 3D Reconstruction
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => image-based_3d_reconstruction
+                            [title] => Image-based 3D Reconstruction
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => d_reconstruction_from_multiple_views
+                            [title] => 3D Reconstruction from Multiple Views
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => spatio-temporal_3d_reconstruction_from_multiple_videos
+                            [title] => Spatio-Temporal 3D Reconstruction from Multiple Videos
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [3] => Array
+                        (
+                            [hid] => d_reconstruction_from_a_single_view
+                            [title] => 3D Reconstruction from a Single View
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                )
+
+            [abstract] => Contact: Jörg Stückler, Prof. Dr. Daniel Cremers
+
+For a human, it is usually an easy task to get an idea of the 3D structure shown in an image. Due to the loss of one dimension in the projection process, the estimation of the true 3D geometry is difficult and a so called ill-posed problem, because usually infinitely many different 3D surfaces may produce the same set of images.
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [members:stueckle] => 1
+                    [members:cremers] => 1
+                    [research:image-based_3d_reconstruction:multiviewreconstruction] => 1
+                    [research:image-based_3d_reconstruction:singleviewreconstruction] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1404283814
+            [modified] => 1438029875
+        )
+
+    [creator] => Jakob Julian Engel
+    [user] => engelj
+    [last_change] => Array
+        (
+            [date] => 1438029875
+            [ip] => 192.55.54.42
+            [type] => E
+            [id] => research:lsdslam
+            [user] => engelj
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [engelj] => Jakob Julian Engel
+            [lohr] => Quirin Lohr
+            [stueckle] => Jörg Stückler
+        )
+
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => emails
+            [1] => software
+        )
+
+    [relation] => Array
+        (
+            [isreplacedby] => research:vslam:lsdslam
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1432074560
+            [modified] => 1443123044
+        )
+
+    [creator] => Jörg Stückler
+    [user] => stueckle
+    [last_change] => Array
+        (
+            [date] => 1443123044
+            [ip] => 77.47.69.79
+            [type] => R
+            [id] => research:robotvision
+            [user] => hazirbas
+            [sum] => old revision restored (2015/05/20 00:56)
+            [extra] => 1432076163
+        )
+
+    [contributor] => Array
+        (
+            [stueckle] => Jörg Stückler
+            [hazirbas] => Caner Hazirbas
+        )
+
+    [title] => Robot Vision
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => robot_vision
+                            [title] => Robot Vision
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Contact: Jörg Stückler, Prof. Dr. Daniel Cremers
+
+We develop computer vision methods for robot systems such as micro aerial vehicles and wheeled robots. In recent years, flying robots such as quadrocopters have gained increased interest in robotics and computer vision research. To navigate safely, these robots need the ability to localize themselves autonomously using their onboard sensors.
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [members:stueckle] => 1
+                    [members:cremers] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1432070970
+            [modified] => 1432075945
+        )
+
+    [creator] => Jörg Stückler
+    [user] => stueckle
+    [last_change] => Array
+        (
+            [date] => 1432075945
+            [ip] => 92.227.13.105
+            [type] => E
+            [id] => research:vslam
+            [user] => stueckle
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [stueckle] => Jörg Stückler
+        )
+
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => stereo-lsdslam
+            [1] => omni-lsdslam
+        )
+
+    [title] => Visual SLAM
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => visual_slam
+                            [title] => Visual SLAM
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => direct_slam_for_monocular_and_stereo_cameras
+                            [title] => Direct SLAM for Monocular and Stereo Cameras
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => direct_slam_for_rgb-d_cameras
+                            [title] => Direct SLAM for RGB-D Cameras
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                )
+
+            [abstract] => Contact: Jörg Stückler, Prof. Dr. Daniel Cremers
+
+We pursue direct SLAM techniques that instead of using keypoints, directly operate on image intensities both for tracking and mapping.
+
+
+
+Direct SLAM for Monocular and Stereo Cameras
+
+LSD-SLAM is a direct SLAM technique for monocular and stereo cameras. The camera is tracked using direct image alignment, while geometry is estimated in the form of semi-dense depth maps, obtained by filtering over many pixelwise stereo comparisons. We then build a …
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [members:stueckle] => 1
+                    [members:cremers] => 1
+                    [research:vslam:lsdslam] => 1
+                    [research:rgb-d_sensors_kinect] => 1
+                )
+
+            [media] => Array
+                (
+                    [research:lsdslam:directvskp.png] => 1
+                )
+
+            [firstimage] => research:lsdslam:directvskp.png
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1443125100
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1443125100
+            [ip] => 92.224.206.241
+            [type] => E
+            [id] => research
+            [user] => lohr
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [lohr] => Quirin Lohr
+            [cremers] => Prof. Dr. Daniel Cremers
+            [oswaldm] => Martin Oswald
+            [strekalo] => Evgeny Strekalovskiy
+            [engelj] => Jakob Julian Engel
+            [stueckle] => Jörg Stückler
+            [hazirbas] => Caner Hazirbas
+            [souiai] => Mohamed Souiai
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => topics
+            [1] => datasets
+            [2] => software
+        )
+
+    [navhide] => Array
+        (
+            [0] => semidense
+            [1] => lsdslam
+            [2] => quadcopter
+            [3] => nanocopter
+            [4] => single_view_3d_reconstruction
+            [5] => stereo-lsdslam
+            [6] => omni-lsdslam
+        )
+
+    [title] => Research
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research
+                            [title] => Research
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => past_research_projects
+                            [title] => Past Research Projects
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Our research group is working on a range of topics in Computer Vision, Image Processing and Pattern Recognition. Computer Vision is about interpreting images. More specifically the goal is to infer properties of the observed world from an image or a collection of images. Our work combines a range of mathematical domains including statistical inference, differential geometry, continuous (partial differential equations) and discrete (graph-theoretic) optimization techniques.
+        )
+
+    [relation] => Array
+        (
+            [media] => Array
+                (
+                    [spezial:bib:kbc_pami11.jpg] => 1
+                    [spezial:bib:nieuwenhuis_et_al_dagm10.jpg] => 1
+                    [research:shape_analysis:shape_matching.png] => 1
+                    [members:sturmju:parrot.jpg] => 1
+                    [spezial:bib:sturm11rss-rgbd.jpg] => 1
+                    [spezial:bib:nieuwenhuis-cremers-pami12.jpg] => 1
+                    [spezial:bib:strekalovskiy_et_al_cvpr12.png] => 1
+                    [research:semidense.png] => 1
+                    [research:scene_flow.png] => 1
+                    [spezial:bib:flownet-iccv-15.png] => 1
+                    [spezial:bib:brox_et_al_pami09.jpg] => 1
+                    [spezial:bib:rosenhahn_dagm05.jpg] => 1
+                    [research:topics:image-based_3d_reconstruction:cockatoo_recon.png] => 1
+                )
+
+            [references] => Array
+                (
+                    [research:image-based_3d_reconstruction] => 1
+                    [research:optical_flow_estimation] => 1
+                    [research:shape_analysis] => 1
+                    [research:robotvision] => 1
+                    [research:rgb-d_sensors_kinect] => 1
+                    [research:image_segmentation] => 1
+                    [research:convex_relaxation_methods] => 1
+                    [research:vslam] => 1
+                    [research:sceneflow] => 1
+                    [research:deeplearning] => 1
+                    [research:shape_priors] => 1
+                    [research:markerless_motion_capture] => 1
+                    [research:single_view_3d_reconstruction] => 1
+                )
+
+            [firstimage] => spezial:bib:kbc_pami11.jpg
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1312276557
+            [modified] => 1468417766
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1468417766
+            [ip] => 172.24.16.157
+            [type] => E
+            [id] => data:datasets
+            [user] => usenko
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [rodola] => Dr. Emanuele Rodola
+            [engelj] => Jakob Julian Engel
+            [laehner] => Zorah Laehner
+            [usenko] => Vladyslav Usenko
+        )
+
+    [user] => 
+    [title] => Datasets
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => datasets
+                            [title] => Datasets
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Our research group is working on a range of topics in Computer Vision, Image Processing and Pattern Recognition.
+We are happy to share our data with other researchers. Please refer to the respective publication when using this data.
+
+We provide the following datasets:
+        )
+
+    [relation] => Array
+        (
+            [media] => Array
+                (
+                    [spezial:bib:sturm11rss-rgbd.jpg] => 1
+                    [data:datasets:bird.png] => 1
+                    [data:datasets:partial.png] => 1
+                    [data:datasets:rodola-ijcv12-scene.png] => 1
+                    [data:datasets:rodola-cvpr14-kids.png] => 1
+                    [data:datasets:topkids:topkids_teaser.png] => 1
+                    [data:datasets:omnislam.png] => 1
+                    [data:datasets:mono_vo_dataset.jpg] => 1
+                )
+
+            [references] => Array
+                (
+                    [data:datasets:rgbd-dataset] => 1
+                    [data:datasets:3dreconstruction] => 1
+                    [data:datasets:partial] => 1
+                    [data:datasets:clutter] => 1
+                    [data:datasets:kids] => 1
+                    [data:datasets:topkids] => 1
+                    [data:datasets:deformable_shape_tracking_datasets] => 1
+                    [data:datasets:omni-lsdslam] => 1
+                    [data:datasets:mono-dataset] => 1
+                )
+
+            [firstimage] => spezial:bib:sturm11rss-rgbd.jpg
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1312276561
+            [modified] => 1450433153
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1450433153
+            [ip] => 131.159.19.173
+            [type] => E
+            [id] => data:software
+            [user] => hazirbas
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [toeppe] => Eno Toeppe
+            [engelj] => Jakob Julian Engel
+            [nieuwenh] => Dr. Claudia Nieuwenhuis
+            [strekalo] => Evgeny Strekalovskiy
+            [dieboldj] => Julia Diebold
+            [hazirbas] => Caner Hazirbas
+        )
+
+    [user] => 
+    [title] => Software
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => software
+                            [title] => Software
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => We provide the following software libraries as open-source to the scientific community. 
+
+ This CAPTCHA Recognition framework provides a C++/Python code to recognize CAPTCHAs using Active Deep Learning approach. This method is described in our research paper: CAPTCHA Recognition with Active Deep Learning (F. Stark and C. Hazırbaş and R. Triebel and D. Cremers), In GCPR Workshop on New Challenges in Neural Computation, 2015.
+        )
+
+    [relation] => Array
+        (
+            [media] => Array
+                (
+                    [data:software:captcha_logo.png] => 1
+                    [data:software:afslogo.png] => 1
+                    [data:software:diebold-et-al-ssvm15.png] => 1
+                    [data:software:fastms_hepburn.png] => 1
+                    [data:software:proportion_priors.png] => 1
+                    [data:software:proportion_priors.zip] => 1
+                    [data:software:quadrotor.png] => 1
+                    [data:software:fastfusion.png] => 1
+                    [spezial:bib:cudamultilabeloptimization.png] => 1
+                    [spezial:bib:nieuwenhuis-et-al-ijcv13.pdf] => 1
+                    [spezial:bib:nieuwenhuis-cremers-pami12.pdf] => 1
+                    [data:software:cudamultilabeloptimization-v1.0.zip] => 1
+                    [research:software:software_planarcut.png] => 1
+                    [spezial:bib:schmidt_et_al_cvpr09.pdf] => 1
+                    [data:software:planarcut-v1.0.2.zip] => 1
+                )
+
+            [references] => Array
+                (
+                    [members:strekalo] => 1
+                    [teaching:ss2014:autonavx] => 1
+                    [members:nieuwenh] => 1
+                    [data:software:dvo] => 1
+                    [data:software:tum_ardrone] => 1
+                    [members:toeppe] => 1
+                )
+
+            [firstimage] => data:software:captcha_logo.png
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1400579548
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1400579548
+            [ip] => 77.4.81.85
+            [type] => E
+            [id] => data
+            [user] => sturmju
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Datasets and Software
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [data:datasets] => 1
+                    [data:software] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => We provide both scientific datasets and software on our website. Please select:
+
+	*  Datasets
+	*  Software
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1412932473
+        )
+
+    [creator] => 
+    [user] => 
+    [contributor] => Array
+        (
+            [aubry] => Mathieu Aubry
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [last_change] => Array
+        (
+            [date] => 1412932473
+            [ip] => 128.93.44.100
+            [type] => E
+            [id] => members:aubry
+            [user] => aubry
+            [sum] => 
+            [extra] => 
+        )
+
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:aubry
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:aubry
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [teaching:ws2011:descriptor] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [title] => Mathieu Aubry
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => teaching
+                            [title] => Teaching
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Mathieu Aubry
+
+
+
+
+
+ My current research mainly focuses on the analysis of images and shapes. This includes both their descriptions and statistics. I am also interested in image processing, computationnal photography and pattern recognition.
+
+ I will teach a seminar in the winter semester 2011/2012 on images and shapes descriptors, beginning in November. Please visit the webpage for more details.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1326381410
+            [modified] => 1328790595
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1328790595
+            [ip] => 128.7.3.55
+            [type] => E
+            [id] => members:benderdaniel
+            [user] => benderdaniel
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [benderdaniel] => Daniel Bender
+            [lohr] => Quirin Lohr
+        )
+
+    [title] => Daniel Bender
+    [sorthow] => asc
+    [sortby] => none
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Multi-Sensor Fusion, SLAM, System Calibration, 3D Reconstruction
+
+Daniel Bender studied Computer Science at Bonn University. He received his “Vordiplom” degree in 2006 and his “Diplom” degree in 2009. Since 2009 he is a research scientist at the Fraunhofer FKIE in the department Sensor Data and Information Fusion. In addition he is a Ph.D. student in the Research Group for Computer Vision, Image Processing and Pattern Recognition, Technical University of Munich headed by Professor Daniel Cremers…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [relation] => Array
+        (
+            [firstimage] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1305791778
+        )
+
+    [creator] => 
+    [user] => 
+    [last_change] => 
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:boerdgen
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:boerdgen
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301063153
+            [modified] => 1457211110
+        )
+
+    [creator] => Quirin Lohr
+    [last_change] => Array
+        (
+            [date] => 1457211110
+            [ip] => 83.171.170.122
+            [type] => E
+            [id] => members:cremers
+            [user] => cremers
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [sturmju] => Juergen Sturm
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [user] => 
+    [sortby] => page
+    [sorthow] => asc
+    [title] => Prof. Dr. Daniel Cremers
+    [sortman] => Array
+        (
+            [0] => publications
+            [1] => talks
+            [2] => research
+            [3] => cv
+            [4] => collaborators
+        )
+
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:cremers
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:cremers
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => According to Google Scholar, Prof. Cremers has an h-index of 59 and his papers have been cited 12814 times.  See a 
+public lecture in German on Recent Developments in Computer Vision.
+
+Research Interests
+
+Computer vision & mathematical image analysis (segmentation, motion estimation, multiview reconstruction, visual SLAM), autonomous quadrocopters, statistical shape analysis, variational methods and partial differential equations, convex and combinatorial optimization, machine learning & statist…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1399371098
+            [modified] => 1453193718
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1453193718
+            [ip] => 95.91.236.240
+            [type] => E
+            [id] => members:dieboldj
+            [user] => dieboldj
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [dieboldj] => Julia Diebold
+        )
+
+    [title] => Julia Diebold
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:dieboldj
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:dieboldj
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [members:cremers] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+Mathematical Image Analysis, Image Segmentation, Variational Methods, Mathematical Morphology, Optimization Methods, Mathematics.
+
+Brief Bio
+
+Since November 2012 Julia Diebold is a PhD Student in the Research Group for Computer Vision and Pattern Recognition at the Technical University of Munich, headed by Professor Daniel Cremers.
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1337617707
+            [modified] => 1355748428
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1355748428
+            [ip] => 131.159.193.89
+            [type] => E
+            [id] => members:engelhan
+            [user] => engelhan
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [engelhan] => Nikolas Engelhard
+        )
+
+    [title] => Nikolas Engelhard
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:engelhan
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:engelhan
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [teaching:ss2012:visnav2012] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+I'm interested in camera based 3D reconstructions of large scenes. Current work includes the usage of a handheld RGBD-Camera to scan rooms, next steps will be the usage of quadcopters to cover larger areas and scan full buildings.
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1327484452
+            [modified] => 1468476237
+        )
+
+    [creator] => Juergen Sturm
+    [user] => sturmju
+    [last_change] => Array
+        (
+            [date] => 1468476237
+            [ip] => 76.22.72.18
+            [type] => E
+            [id] => members:engelj
+            [user] => engelj
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [engelj] => Jakob Julian Engel
+            [stueckle] => Jörg Stückler
+        )
+
+    [title] => Jakob Engel
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:engelj
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:engelj
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [members:cremers] => 1
+                    [research:vslam:dso] => 1
+                    [research:vslam:lsdslam] => 1
+                    [research:quadcopter] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Jakob Engel received his Bachelor degree in Computer Science in 2009 and his Master degree in December 2011 at the Technical University of Munich (Germany). He received the SIEMENS Award for the best Master's Thesis 2012 for his work on Autonomous Camera-Based Navigation of a Quadrocopter.
+Since September 2012 he is a full-time PhD Student in the Computer Vision Group at the TU Munich, headed by Prof. Daniel Cremers. His main research interests are visual SLAM (monocular, stereo and RGB-D), 3D r…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1310551617
+        )
+
+    [creator] => 
+    [last_change] => 
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [goldluec] => Bastian Goldluecke
+            [lohr] => Quirin Lohr
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Dr. Bastian Goldlücke
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:goldluec
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:goldluec
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1412251514
+            [modified] => 1465005853
+        )
+
+    [user] => 
+    [creator] => 
+    [title] => Philip Häusser
+    [sorthow] => asc
+    [sortby] => none
+    [last_change] => Array
+        (
+            [date] => 1465005853
+            [ip] => 31.10.145.238
+            [type] => E
+            [id] => members:haeusser
+            [user] => haeusser
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [haeusser] => Philip Haeusser
+        )
+
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:haeusser
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:haeusser
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [teaching:ss2015:mlpractice_ss2015] => 1
+                    [teaching:ss2016:mlpractice_ss2016] => 1
+                )
+
+            [media] => Array
+                (
+                    [members:haeusser:2015-06-12-cambridge.pdf] => 1
+                    [members:haeusser:2015-06-12-cambridge.mp4] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_term_2015
+                            [title] => Summer Term 2015
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => summer_term_2016
+                            [title] => Summer Term 2016
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                )
+
+            [abstract] => I am currently on leave from TUM, working as a Research Software Engineer Intern at Google.
+
+About
+
+I'm a second-year PhD student in computer science at TUM, doing research in computer vision and machine learning advised by Prof. Daniel Cremers. My current projects focus on the application of convolutional neural networks (CNNs) on tasks like optical anomaly detection and scene recognition. Research interests include: computer vision, machine learning, deep learning, convolutional networks, opti…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1406116399
+            [modified] => 1468748020
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1468748020
+            [ip] => 77.47.69.79
+            [type] => E
+            [id] => members:hazirbas
+            [user] => hazirbas
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [hazirbas] => Caner Hazirbas
+        )
+
+    [sorthow] => asc
+    [sortby] => title
+    [title] => Caner Hazırbaş 
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:hazirbas
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:hazirbas
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [members:cremers] => 1
+                )
+
+            [media] => Array
+                (
+                    [members:hazirbas:gscholar.png] => 1
+                    [members:hazirbas:canerhazirbas_cv.pdf] => 1
+                    [members:hazirbas:github-mark-120px-plus.png] => 1
+                    [members:hazirbas:youtube-icon-full_color.png] => 1
+                )
+
+            [firstimage] => members:hazirbas:gscholar.png
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                )
+
+            [abstract] => Research Interests
+
+I am interested in Deep Learning, Object Recognition/Detection and Semantic Scene Understanding.
+
+Wanna know more about deep learning? Here is a short intro to the topic:
+
+
+
+Google Scholar : h-index: 2, citations: 38
+
+I recommend all students who consider doing a phd to read the PhD Grind book.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1338881207
+            [modified] => 1342018309
+        )
+
+    [creator] => Youngwook Kee
+    [user] => Kee
+    [last_change] => Array
+        (
+            [date] => 1342018309
+            [ip] => 131.159.19.98
+            [type] => E
+            [id] => members:kee
+            [user] => Kee
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [Kee] => Youngwook Kee
+        )
+
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:kee
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:kee
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [title] => Youngwook Kee
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => youngwook_kee
+                            [title] => Youngwook Kee
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => I am currently pursuing the Ph.D. degree in the Department of Electrical Engineering at KAIST, South Korea. In March 2012, I joined the Computer Vision Group at Technical University of Munich as a visiting Ph.D. student via the Erasmus Mundus BEAM Programme, where I am studying variational methods and regularization theory for non-rigid shape registration. My research interests are in the field of Applied Mathematics and Statistical Signal Processing, in particualr statistical analysis of shapes…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1345796670
+            [modified] => 1355134616
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1355134616
+            [ip] => 131.159.18.142
+            [type] => E
+            [id] => members:kerl
+            [user] => kerl
+            [sum] => updated info
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [kerl] => Christian Kerl
+        )
+
+    [title] => 
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:kerl
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:kerl
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => dense visual odometry, autonomous quadrocopters, large-scale 3D reconstruction, motion segmentation
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1338551917
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1338551917
+            [ip] => 131.159.18.142
+            [type] => E
+            [id] => members:klodt
+            [user] => klodt
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [klodt] => Maria Klodt
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Maria Klodt
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:klodt
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:klodt
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Computer Vision, Motion Capturing, Image Segmentation, 3D Reconstruction, Optimization Problems, Variational Methods, Machine Learning, Robotics, Mathematics.
+
+Maria Klodt received her “Vordiplom” degree in Computer Science in 2005 and her “Diplom” degree in Computer Science in 2007 at the University of Bonn. In her diploma thesis, she studied continuous global optimization techniques for Image Segmentation and Multiview 3D Reconstruction. From June 2005 to August 2007 she worked in the Robotics…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1339017721
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1339017721
+            [ip] => 84.226.236.0
+            [type] => E
+            [id] => members:kolev
+            [user] => kolev
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [kolev] => Kalin Kolev
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Kalin Kolev
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:kolev
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:kolev
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => This web page is no longer maintained! My new one is here.
+
+
+
+Research Interests
+
+multiview 3D reconstruction, continuous optimization, statistical approaches, GPU programming
+
+Brief Bio
+
+Kalin Kolev received his “Vordiplom” in Computer Science in 2002 and his “Diplom” degree in 2005 at the University of Bonn (Germany). Since January 2006 he has been a Ph.D. student in the Research Group for Computer Vision, Image Processing and Pattern Recognition headed by Professor Daniel Cremers, currently a…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1399623842
+            [modified] => 1460458382
+        )
+
+    [creator] => Robert Maier
+    [user] => maierr
+    [last_change] => Array
+        (
+            [date] => 1460458382
+            [ip] => 131.159.18.129
+            [type] => E
+            [id] => members:maierr
+            [user] => maierr
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [maierr] => Robert Maier
+        )
+
+    [title] => Robert Maier
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:maierr
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:maierr
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+RGB-D based 3D Reconstruction, SLAM, Visual Odometry, Bundle Adjustment techniques, GPU Programming
+
+Brief Bio
+
+Robert Maier received his Bachelor's degree (2010) and his Master's degree (2013, with distinction) in Computer Science from the Technical University of Munich (Germany). 
+He studied at UPC Barcelona (Spain) in 2011, before he worked as a Computer Vision Research Intern for RGB-D based 3D reconstruction at Siemens Corporate Research in Princeton, NJ (USA) in 2012.
+F…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1396970062
+            [modified] => 1430128148
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1430128148
+            [ip] => 131.159.19.119
+            [type] => E
+            [id] => members:moellenh
+            [user] => moellenh
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [moellenh] => Thomas Möllenhoff
+        )
+
+    [title] => Thomas Möllenhoff
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:moellenh
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:moellenh
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+Variational Methods, Convex Relaxation Methods, Convex Optimization, Operator Splitting Algorithms
+
+Brief Bio
+
+Thomas Möllenhoff received his Bachelor's degree (2011) and his Master's degree (2014, with high distinction) in Computer Science from the Technical University of Munich. 
+In 2013 he studied one semester abroad at the Technical University of Denmark, Copenhagen.
+Since February 2014 he is a PhD Student in the Computer Vision Group at the Technical University of Munich…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301393251
+            [modified] => 1395255638
+        )
+
+    [creator] => Quirin Lohr
+    [last_change] => Array
+        (
+            [date] => 1395255638
+            [ip] => 136.152.37.165
+            [type] => E
+            [id] => members:nieuwenh
+            [user] => nieuwenh
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [nieuwenh] => Dr. Claudia Nieuwenhuis
+            [sturmju] => Juergen Sturm
+        )
+
+    [user] => 
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:nieuwenh
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:nieuwenh
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [research:image_segmentation] => 1
+                    [research:optical_flow_estimation] => 1
+                    [research:single_view_3d_reconstruction] => 1
+                )
+
+            [media] => Array
+                (
+                    [spezial:bib:nieuwenhuis-cremers-pami12.jpg] => 1
+                    [spezial:bib:nieuwenhuis_et_al_dagm10.jpg] => 1
+                    [research:topics:image-based_3d_reconstruction:cockatoo_recon.png] => 1
+                )
+
+            [firstimage] => spezial:bib:nieuwenhuis-cremers-pami12.jpg
+        )
+
+    [title] => Dr. Claudia Nieuwenhuis
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => dr_claudia_nieuwenhuis
+                            [title] => Dr. Claudia Nieuwenhuis
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => I am currently working as a postdoctoral researcher at UC Berkeley, USA. Here is my homepage.
+
+I received my master's degree in computer science from the Technical University of Ilmenau in 2006 and a master's degree in mathematics from the University of Hagen in 2008. In 2009 I obtained a PhD degree in computer science from the University of Heidelberg. Between 2003 and 2006 I worked as an intern at Siemens Corporate Research in Princeton, NJ, USA and at the Fraunhofer Center for Advanced Media …
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1417645510
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1417645510
+            [ip] => 85.4.74.47
+            [type] => E
+            [id] => members:oswaldm
+            [user] => oswaldm
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [oswaldm] => Martin Oswald
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Martin Oswald
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:oswaldm
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:oswaldm
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [research:single_view_3d_reconstruction] => 1
+                )
+
+            [media] => Array
+                (
+                    [research:topics:image-based_3d_reconstruction:bird_input.png] => 1
+                    [research:topics:image-based_3d_reconstruction:bird_s.gif] => 1
+                )
+
+            [firstimage] => research:topics:image-based_3d_reconstruction:bird_input.png
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => This is my old web page. In September 2014, I have moved to the Computer Vision and Geometry Group at ETH Zurich.
+My new web page can be found here.
+
+A list of my publications is available here.
+
+Martin R. Oswald received his “Vordiplom” degree (2003) and a “Diplom” degree (2007) in Computer Science from Dresden University of Technology. In 2005 he studied Machine Learning and Computer Vision at the University of Technology, Sydney. From 2005 to 2007 he worked at the Institute for Civil Engineer…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1378278688
+            [modified] => 1458650111
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1458650111
+            [ip] => 151.66.114.55
+            [type] => E
+            [id] => members:rodola
+            [user] => rodola
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [rodola] => Dr. Emanuele Rodola
+        )
+
+    [title] => Dr. Emanuele Rodolà
+    [sorthow] => asc
+    [sortby] => title
+    [sortman] => Array
+        (
+            [0] => publications
+            [1] => code
+            [2] => teaching
+        )
+
+    [navhide] => Array
+        (
+            [0] => news
+            [1] => datasets
+        )
+
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:rodola
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:rodola
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [teaching:ss2015:lecture_shape_analysis] => 1
+                    [teaching:ss2015:seminar_shape_analysis] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => I moved to USI Lugano with Prof. Michael Bronstein since Feb 2016. Please refer to my personal page for further updates.
+
+I am a member of the Computer Vision lab at TUM since August 2013, funded by an Alexander von Humboldt Postdoctoral Research Fellowship starting February 2014. In 2012 I was a JSPS Research Fellow at The University of Tokyo, Intelligent Systems and Informatics Lab. I graduated in Computer System Engineering at the University of Rome “Tor Vergata” in 2008, where I also receive…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1326381503
+            [modified] => 1414069421
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1414069421
+            [ip] => 128.7.3.55
+            [type] => E
+            [id] => members:schikoramarek
+            [user] => benderd
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [schikoramarek] => Marek Schikora
+            [sturmju] => Juergen Sturm
+            [benderdaniel] => Daniel Bender
+            [lohr] => Quirin Lohr
+            [benderd] => Daniel Bender
+        )
+
+    [title] => Marek Schikora
+    [sorthow] => asc
+    [sortby] => none
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Multi-Object Tracking, Multi-Sensor Fusion, Variational Methods, Information Fusion, Statistics,  Machine Learning.
+
+Since 2013 Marek Schikora has the honor to lead a young and succesfull team within the Fraunhofer FKIE. Their work is focused around the topic Aerial Vision. We are part of the Sensor Data and Information Fusion research group (SDF), headed by Dr. Wolfgang Koch. Before he was working as student research assistant in the Computer Vision Group, headed by Prof. Dr. Daniel Cremers at …
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [relation] => Array
+        (
+            [firstimage] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1318342718
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1318342718
+            [ip] => 131.159.19.108
+            [type] => E
+            [id] => members:schlicku
+            [user] => schlicku
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [schlicku] => Dr. Ulrich Schlickewei
+            [lohr] => Quirin Lohr
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Dr. Ulrich Schlickewei
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:schlicku
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:schlicku
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [research:shape_analysis] => 1
+                )
+
+            [media] => Array
+                (
+                    [research:shape_analysis:shape_matching.png] => 1
+                )
+
+            [firstimage] => research:shape_analysis:shape_matching.png
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Brief Bio
+
+Ulrich Schlickewei studied Mathematics and Physics at the University of Freiburg i. Brsg., at the University of Rome “La Sapienza” and at the University of Paris VI. Following his Master's degree in Pure Mathematics from Paris University, Ulrich was a doctoral student at the Department of Mathematics of the University of Bonn under supervision of Prof. Dr. Daniel Huybrechts. In 2009 he received a Ph.D. for a thesis in the field of Complex Algebraic Geometry.
+Since October 2009, Ulrich…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1433768580
+            [modified] => 1433768580
+        )
+
+    [creator] => Quirin Lohr
+    [user] => lohr
+    [last_change] => Array
+        (
+            [date] => 1433768580
+            [ip] => 131.159.19.188
+            [type] => C
+            [id] => members:schmifra
+            [user] => lohr
+            [sum] => created
+            [extra] => 
+        )
+
+    [title] => Dr. Frank Schmidt
+    [sorthow] => asc
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => 
+        )
+
+    [relation] => Array
+        (
+            [firstimage] => 
+        )
+
+    [sortby] => none
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1356269576
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1356269576
+            [ip] => 93.220.5.192
+            [type] => E
+            [id] => members:souiai
+            [user] => cremers
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [souiai] => Mohamed Souiai
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [user] => 
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:souiai
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:souiai
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [members:cremers] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Mohamed Souiai received his “Vordiplom” degree in Computer Science in 2007 and his “Diplom” degree in 2010 at the University of Bonn (Germany). In his Diploma thesis he studied second-order methods for Total Variation minimization. Since October 2010 he is a Ph.D student in the Research Group for Computer Vision, Image Processing and Pattern Recognition, University of Munich, Germany, headed by  Professor Daniel Cremers.
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301406997
+            [modified] => 1392739237
+        )
+
+    [creator] => Quirin Lohr
+    [last_change] => Array
+        (
+            [date] => 1392739237
+            [ip] => 131.159.18.12
+            [type] => E
+            [id] => members:steinbrf
+            [user] => steinbrf
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [sturmju] => Juergen Sturm
+            [steinbrf] => Frank Steinbrücker
+            [kolev] => Kalin Kolev
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Frank Steinbrücker
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:steinbrf
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:steinbrf
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [members:cremers] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Research Interests
+
+Correspondence Problems, Segmentation, SLAM, Variational Methods, Partial Differential Equations
+
+Brief Bio
+
+Frank Steinbrücker received his Bachelor's degree in 2007 and his Master's degree in Computer Science in 2008 at Saarland University (Germany).
+Since September 2008 he is a Ph.D. student in the Research Group for Computer Vision,
+Image Processing and Pattern Recognition at the University of Bonn headed by 
+Professor Daniel Cremers.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1443558319
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1443558319
+            [ip] => 89.15.42.181
+            [type] => E
+            [id] => members:strekalo
+            [user] => strekalo
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [strekalo] => Evgeny Strekalovskiy
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Evgeny Strekalovskiy
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:strekalo
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:strekalo
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [members:cremers] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+Variational approaches, Convex and Non-convex optimization, Multilabel problems, Mumford-Shah functional, GPU programming.
+
+Brief Bio
+
+From May 2010 to March 2015 Evgeny Strekalovskiy was a Ph.D. student in the Computer Vision Research Group at the Technical University of Munich, Germany, headed by Professor Daniel Cremers.
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1445964069
+        )
+
+    [creator] => 
+    [user] => 
+    [last_change] => Array
+        (
+            [date] => 1445964069
+            [ip] => 131.159.0.47
+            [type] => E
+            [id] => members:stuehmer
+            [user] => stuehmer
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [stuehmer] => Jan Stühmer
+            [kolev] => Kalin Kolev
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [title] => Jan Stühmer
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:stuehmer
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:stuehmer
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [media] => Array
+                (
+                    [members:stuehmer:tum-ias.jpeg] => 1
+                    [members:stuehmer:connectivity-angiography-420x353.png] => 1
+                    [members:stuehmer:f1-cropped-420x333.png] => 1
+                )
+
+            [firstimage] => members:stuehmer:tum-ias.jpeg
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => With the support of the Technische Universität München - Institute for Advanced Study, funded by the German Excellence Initiative.
+
+
+
+
+
+Jan Stühmer received his Diploma degree (with distinction) in Computer Science from Dresden University of Technology in 2010. In his diploma thesis he developed a novel method that allows dense 3D reconstructions with a handheld camera. In 2014/2015 he stayed as a research intern with Microsoft Research Cambridge and in 2013 as a visiting student researcher at t…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1300981443
+            [modified] => 1420401318
+        )
+
+    [creator] => DokuWiki Administrator
+    [last_change] => Array
+        (
+            [date] => 1420401318
+            [ip] => 77.4.226.22
+            [type] => E
+            [id] => members:sturmju
+            [user] => sturmju
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [sturmju] => Juergen Sturm
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Dr. Juergen Sturm
+    [navhide] => Array
+        (
+            [0] => bib
+            [1] => talks
+        )
+
+    [sortman] => Array
+        (
+            [0] => publications
+            [1] => research
+            [2] => teaching
+            [3] => phd_thesis
+            [4] => bio
+        )
+
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:sturmju
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:sturmju
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [research:quadcopter] => 1
+                    [research:rgb-d_sensors_kinect] => 1
+                    [members:sturmju:publications] => 1
+                    [members:sturmju:research] => 1
+                    [members:sturmju:teaching] => 1
+                    [members:sturmju:phd_thesis] => 1
+                    [members:sturmju:bio] => 1
+                    [members:sturmju:book] => 1
+                    [members:sturmju:deutsch] => 1
+                )
+
+            [media] => Array
+                (
+                    [spezial:bib:sturm11rss-rgbd.jpg] => 1
+                    [members:sturmju:parrot.jpg] => 1
+                )
+
+            [firstimage] => spezial:bib:sturm11rss-rgbd.jpg
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => navigation
+                            [title] => Navigation
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => selected_publications
+                            [title] => Selected Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => I am fascinated by the immense progress and application potential of computer vision and robotics research. My motivation is to push the state-of-the-art by developing novel approaches and applying these methods to solve real-world problems. For example, our approach to autonomous quadrocopter flight enables a low-cost quadrocopter to follow its trajectory using a camera as its main sensor while taking a series of images. Our 3D reconstruction algorithm allows to scan persons in 3D and print the…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301562184
+            [modified] => 1360174439
+        )
+
+    [creator] => Quirin Lohr
+    [last_change] => Array
+        (
+            [date] => 1360174439
+            [ip] => 131.159.19.171
+            [type] => E
+            [id] => members:toeppe
+            [user] => toeppe
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [toeppe] => Eno Toeppe
+            [cremers] => Prof. Dr. Daniel Cremers
+            [nieuwenh] => Dr. Claudia Nieuwenhuis
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Eno Töppe
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:toeppe
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:toeppe
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [research:single_view_3d_reconstruction] => 1
+                    [research:image_segmentation] => 1
+                )
+
+            [media] => Array
+                (
+                    [research:topics:image-based_3d_reconstruction:cockatoo_recon.png] => 1
+                    [spezial:bib:nieuwenhuis-cremers-pami12.jpg] => 1
+                    [research:software:software_planarcut.png] => 1
+                )
+
+            [firstimage] => research:topics:image-based_3d_reconstruction:cockatoo_recon.png
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Variational Methods, Continuous and Discrete Optimization, Computer Graphics, Mathematics, Statistical Methods
+
+Eno Töppe studied Computer Science at Bonn University. He received the “Vordiplom” degree in 2006 and the “Diplom” degree in 2008. His master thesis was awarded the price for the best master thesis of the year by the Bonn Society for Computer Science.
+
+Since 2009 he is a Ph.D. student in the Research Group for Computer Vision, Image Processing and Pattern Recognition, Technical Univers…
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1365000779
+            [modified] => 1438685917
+        )
+
+    [creator] => Rudolph Triebel
+    [user] => triebel
+    [last_change] => Array
+        (
+            [date] => 1438685917
+            [ip] => 131.159.19.239
+            [type] => E
+            [id] => members:triebel
+            [user] => triebel
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [triebel] => Rudolph Triebel
+            [stuehmer] => Jan Stühmer
+        )
+
+    [title] => Dr. habil. Rudolph Triebel
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:triebel
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:triebel
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+Rudolph's main research area are machine learning algorithms applied to mobile robotics tasks, in particular robot perception. He investigates probabilistic reasoning methods for object detection and recognition, and he works on efficient learning methods for classification applications which are particularly suited for mobile robots. Recently, his interests are focussed on unsupervised and online learning methods as well as their efficient implementation on real robotic syst…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1396969489
+            [modified] => 1455024965
+        )
+
+    [creator] => Vladyslav Usenko
+    [user] => usenko
+    [last_change] => Array
+        (
+            [date] => 1455024965
+            [ip] => 172.24.16.157
+            [type] => E
+            [id] => members:usenko
+            [user] => usenko
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [usenko] => Vladyslav Usenko
+        )
+
+    [title] => Vladyslav Usenko
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:usenko
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:usenko
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1370249731
+            [modified] => 1449830001
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1449830001
+            [ip] => 129.187.254.46
+            [type] => E
+            [id] => members:vestner
+            [user] => vestner
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [vestner] => Matthias Vestner
+        )
+
+    [title] => Matthias Vestner
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:vestner
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:vestner
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                    [teaching:ss2015:lecture_shape_analysis] => 1
+                    [teaching:ss2015:seminar_shape_analysis] => 1
+                    [teaching:ss2014:lecture_shape_analysis] => 1
+                    [teaching:ss2014:seminar_shape_analysis] => 1
+                    [teaching:ws2013:ml_ws13] => 1
+                    [members:laehner] => 1
+                )
+
+            [media] => Array
+                (
+                    [members:vestner:centaur0.png] => 1
+                    [members:vestner:centaur4.png] => 1
+                    [members:vestner:laehner.png] => 1
+                    [members:vestner:philipp.png] => 1
+                )
+
+            [firstimage] => members:vestner:centaur0.png
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => publications
+                            [title] => Publications
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [3] => Array
+                        (
+                            [hid] => teaching
+                            [title] => Teaching
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [4] => Array
+                        (
+                            [hid] => lectures_and_seminars
+                            [title] => Lectures and Seminars
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [5] => Array
+                        (
+                            [hid] => bachelormaster_s_theses_and_interdisciplinary_projects_idp
+                            [title] => Bachelor/Master's Theses and Interdisciplinary Projects (IDP)
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                )
+
+            [abstract] => Matthias has joined the Research Group for Computer Vision and Pattern Recognition as a Ph.D. student in June 2013.
+
+In spring 2015 he spent three month at the group of Prof. Alexander Bronstein at Tel Aviv University.
+
+Matthias received his diploma in Mathematics from Technische Universität München in 2013.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1309938552
+            [modified] => 1305791778
+        )
+
+    [creator] => 
+    [user] => 
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:vitadell
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:vitadell
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1456840042
+            [modified] => 1469029042
+        )
+
+    [user] => 
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1469029042
+            [ip] => 131.159.19.107
+            [type] => E
+            [id] => members:wangr
+            [user] => wangr
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [wangr] => Rui Wang
+        )
+
+    [title] => Rui Wang
+    [sorthow] => asc
+    [sortby] => none
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:wangr
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:wangr
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => Research Interests
+
+Visual Semantic 3D Reconstruction, SLAM, Scene Understanding
+
+Brief Bio
+
+Rui Wang received his Bachelor's degree (2011) in Automation from Xi'an Jiaotong University, and his Master's degree (2014, with distinction) in Electrical Engineering and Information Technology from the Technical University of Munich. 
+From 2014 to 2016 he worked as a computer vision algorithm developer for advanced driver assistance systems (ADAS) at Continental. Since March 2016 he is a PhD student in…
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1305795341
+            [modified] => 1460553480
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1460553480
+            [ip] => 131.159.19.109
+            [type] => E
+            [id] => members:windheus
+            [user] => windheus
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [windheus] => Thomas Windheuser
+            [sturmju] => Juergen Sturm
+            [lohr] => Quirin Lohr
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [title] => Thomas Windheuser
+    [plugin_include] => Array
+        (
+            [instructions] => Array
+                (
+                    [0] => Array
+                        (
+                            [mode] => page
+                            [page] => includes:member
+                            [sect] => 
+                            [parent_id] => members:windheus
+                        )
+
+                )
+
+            [pages] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => includes:member
+                            [exists] => 1
+                            [can_edit] => 
+                            [parent_id] => members:windheus
+                        )
+
+                )
+
+            [include_content] => 
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [includes:member] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => research_interests
+                            [title] => Research Interests
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => brief_bio
+                            [title] => Brief Bio
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Computer Vision, Shape Matching and Comparison, Linear Programming, Discrete Optimization
+
+Since April 2010 Thomas is a Ph.D. student in the Computer Vision Group headed by Daniel Cremers at the Technische Universität München. He is interested in using graph theory, discrete optimization and also continuous optimization to solve computer vision problems.
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1467368878
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1467368878
+            [ip] => 131.159.19.188
+            [type] => E
+            [id] => members
+            [user] => lohr
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [sturmju] => Juergen Sturm
+            [cremers] => Prof. Dr. Daniel Cremers
+            [aubry] => Mathieu Aubry
+            [Kee] => Youngwook Kee
+            [kolev] => Kalin Kolev
+            [naseer] => Tayyab Naseer
+            [engelj] => Jakob Julian Engel
+            [bergbaue] => Julia Bergbauer
+            [kerl] => Christian Kerl
+            [brandl] => Matthaeus Brandl
+            [triebel] => Rudolph Triebel
+            [rodola] => Emanuele Rodola
+            [nieuwenh] => Dr. Claudia Nieuwenhuis
+            [moellerm] => Dr. Michael Möller
+            [dieboldj] => Julia Diebold
+            [maierr] => Robert Maier
+            [golkov] => Vladimir Golkov
+            [hazirbas] => Caner Hazirbas
+            [stueckle] => Jörg Stückler
+            [haeusser] => Philip Haeusser
+            [windheus] => Thomas Windheuser
+            [domokos] => Csaba Domokos
+            [strekalo] => Evgeny Strekalovskiy
+            [cremers ] => Prof. Dr. Daniel Cremers
+            [jaimez] => Mariano Jaimez
+            [wangr] => Rui Wang
+        )
+
+    [user] => 
+    [sortby] => page
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => cremers
+            [1] => domokos
+            [2] => lealtaix
+            [3] => moellerm
+            [4] => rodola
+            [5] => schmifra
+            [6] => stueckle
+            [7] => triebel
+            [8] => esteller
+            [9] => zhang
+        )
+
+    [navhide] => Array
+        (
+            [0] => aubry
+            [1] => benderdaniel
+            [2] => boerdgen
+            [3] => brandl
+            [4] => dieboldj
+            [5] => engelhan
+            [6] => engelj
+            [7] => goldluec
+            [8] => kee
+            [9] => klodt
+            [10] => knese
+            [11] => kolev
+            [12] => naseer
+            [13] => nieuwenh
+            [14] => oswaldm
+            [15] => rodola
+            [16] => schikoramarek
+            [17] => schlicku
+            [18] => schubdav
+            [19] => steinbrf
+            [20] => strekalo
+            [21] => stueckle
+            [22] => sturmju
+            [23] => toeppe
+            [24] => vitadell
+            [25] => zhangxia
+        )
+
+    [navextra] => Array
+        (
+        )
+
+    [title] => Members
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => members
+                            [title] => Members
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => administrative_and_technical_staff
+                            [title] => Administrative and Technical Staff
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => alumni
+                            [title] => Alumni
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => NamePositionPhoneProf. Dr. Daniel Cremers	Head of Group +49-89-289-17755Dr. Csaba Domokos	Postdoctoral Researcher	+49-89-289-17750Dr. Laura Leal-Taixe			Postdoctoral Researcher	+49-89-289-17759Dr. Michael Möller			Postdoctoral Researcher	+49-89-289-17777Dr. Frank Schmidt			Postdoctoral Researcher	        +49-89-289-17752PD Dr. habil. Rudolph Triebel		Postdoctoral Researcher+49-89-289-17792Dr. Xiaoqin Zhang		Postdoctoral Researcher+49-89-289-17753Thomas Frerix			PhD Student	+49-89-289-17780Vladim…
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [members:cremers] => 1
+                    [members:domokos] => 1
+                    [members:lealtaix] => 1
+                    [members:moellerm] => 1
+                    [members:schmifra] => 1
+                    [members:triebel] => 1
+                    [members:zhang] => 1
+                    [members:frerix] => 1
+                    [members:golkov] => 1
+                    [members:haeusser] => 1
+                    [members:hazirbas] => 1
+                    [members:jaimez] => 1
+                    [members:kerl] => 1
+                    [members:kuschk] => 1
+                    [members:lingni] => 1
+                    [members:maierr] => 1
+                    [members:moellenh] => 1
+                    [members:schubert] => 1
+                    [members:sommerc] => 1
+                    [members:stuehmer] => 1
+                    [members:souiai] => 1
+                    [members:usenko] => 1
+                    [members:vestner] => 1
+                    [members:windheus] => 1
+                    [members:wangr] => 1
+                    [members:wagnersa] => 1
+                    [members:lohr] => 1
+                    [members:stueckle] => 1
+                    [members:oswaldm] => 1
+                    [members:steinbrf] => 1
+                    [members:sturmju] => 1
+                    [members:knese] => 1
+                    [members:aubry] => 1
+                    [members:brandl] => 1
+                    [members:dieboldj] => 1
+                    [members:engelhan] => 1
+                    [members:engelj] => 1
+                    [members:kee] => 1
+                    [members:klodt] => 1
+                    [members:schlicku] => 1
+                    [members:strekalo] => 1
+                    [members:toeppe] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301574994
+            [modified] => 1303822517
+        )
+
+    [creator] => Quirin Lohr
+    [last_change] => Array
+        (
+            [date] => 1303822517
+            [ip] => 131.159.19.80
+            [type] => C
+            [id] => teaching:ss2011
+            [user] => lohr
+            [sum] => created
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => mvg2011
+            [1] => smlcv2011
+            [2] => gpucourse2011
+            [3] => doktorandenseminar
+        )
+
+    [title] => Summer Semester 2011
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_semester_2011
+                            [title] => Summer Semester 2011
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Summer Semester 2011
+
+	*  Multiple View Geometry
+ Lecture (3 h) and Exercise (3 h)
+	*  Statistical Methods and Learning in Computer Vision
+ Lecture (2 h) and Exercise (2 h every two weeks)
+	*  Practical Course: GPU Programming in Computer Vision
+ (6h / 10 ECTS)
+	*  PhD Seminar
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ss2011:mvg2011] => 1
+                    [teaching:ss2011:smlcv2011] => 1
+                    [teaching:ss2011:gpucourse2011] => 1
+                    [teaching:ss2011:doktorandenseminar] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1327921789
+            [modified] => 1346830843
+        )
+
+    [creator] => Martin Oswald
+    [user] => oswaldm
+    [last_change] => Array
+        (
+            [date] => 1346830843
+            [ip] => 131.159.18.129
+            [type] => E
+            [id] => teaching:ss2012
+            [user] => sturmju
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [strekalo] => Evgeny Strekalovskiy
+            [souiai] => Mohamed Souiai
+        )
+
+    [title] => Summer Semester 2012
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_semester_2012
+                            [title] => Summer Semester 2012
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Summer Semester 2012
+
+	*  Practical Course: GPU Programming in Computer Vision
+ (6h / 10 ECTS) block seminar during the semester break
+	*  Mathematical Image Processing Seminar
+(2 h / 3 ECTS)
+	*  Visual Navigation for Flying Robots
+Lecture (2 h / 6 ECTS) and Exercise (2 h every two weeks)
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ss2012:gpucourse2012] => 1
+                    [teaching:ss2012:imageprocseminar2012] => 1
+                    [teaching:ss2012:visnav2012] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1358422256
+            [modified] => 1373640602
+        )
+
+    [creator] => Juergen Sturm
+    [user] => sturmju
+    [last_change] => Array
+        (
+            [date] => 1373640602
+            [ip] => 131.159.19.196
+            [type] => E
+            [id] => teaching:ss2013
+            [user] => engelj
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [bergbaue] => Julia Bergbauer
+            [engelj] => Jakob Julian Engel
+        )
+
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => visnav_sweden
+        )
+
+    [title] => Summer Semester 2013
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_semester_2013
+                            [title] => Summer Semester 2013
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Summer Semester 2013
+
+	*  Machine Learning for Robotics and Computer Vision
+ Lecture (4 ECTS)
+	*  Multiple View Geometry
+ Lecture (3 h) and Exercise (3 h)  (8 ECTS)
+	*  Visual Navigation for Flying Robots
+Lecture (2 h / 6 ECTS), Exercise (2 h every two weeks), and Lab Course (4h every two weeks)
+	*  Practical Course: GPU Programming in Computer…
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ss2013:ml_ss13] => 1
+                    [teaching:ss2013:mvg2013] => 1
+                    [teaching:ss2013:visnav2013] => 1
+                    [teaching:ss2013:gpucourse_ss2013] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1390227641
+            [modified] => 1409920320
+        )
+
+    [creator] => Thomas Windheuser
+    [user] => windheus
+    [last_change] => Array
+        (
+            [date] => 1409920320
+            [ip] => 131.159.19.228
+            [type] => E
+            [id] => teaching:ss2014
+            [user] => stueckle
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [bergbaue] => Julia Bergbauer
+            [strekalo] => Evgeny Strekalovskiy
+            [rodola] => Dr. Emanuele Rodola
+            [sturmju] => Juergen Sturm
+            [stueckle] => Joerg Stueckler
+        )
+
+    [title] => Summer Semester 2014
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_semester_2014
+                            [title] => Summer Semester 2014
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Summer Semester 2014
+
+	*  Practical Course: GPU Programming in Computer Vision (6h / 10 ECTS)
+	*  Analysis of Three-Dimensional Shapes
+Lecture (2 h) and Exercise (1 h)
+	*  Multiple View Geometry
+Lecture (3 h) and Exercise (3 h)
+	*  Seminar: Recent Advances in the Analysis of 3D Shapes  (2 h / 4 ECTS)
+	*  Autonomous Navigation for Flying Robots …
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ss2014:gpucourse_ss2014] => 1
+                    [teaching:ss2014:lecture_shape_analysis] => 1
+                    [teaching:ss2014:mvg2014] => 1
+                    [teaching:ss2014:seminar_shape_analysis] => 1
+                    [teaching:ss2014:autonavx] => 1
+                    [teaching:ss2014:visnav2014] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1420807460
+            [modified] => 1429689608
+        )
+
+    [creator] => Thomas Windheuser
+    [user] => windheus
+    [last_change] => Array
+        (
+            [date] => 1429689608
+            [ip] => 178.27.178.115
+            [type] => E
+            [id] => teaching:ss2015
+            [user] => sturmju
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [windheus] => Thomas Windheuser
+            [hazirbas] => Caner Hazirbas
+            [stueckle] => Jörg Stückler
+            [vestner] => Matthias Vestner
+            [moellenh] => Thomas Möllenhoff
+            [moellerm] => Dr. Michael Möller
+            [dieboldj] => Julia Diebold
+            [sturmju] => Juergen Sturm
+        )
+
+    [title] => Summer Semester 2015
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_semester_2015
+                            [title] => Summer Semester 2015
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Lectures
+
+	*  Analysis of Three-Dimensional Shapes
+(4 h + 2h / 8 ECTS)
+	*  Nonlinear Multiscale Methods for Image and Signal Analysis
+(2 h / 4 ECTS)
+	*  Multiple View Geometry
+Lecture (4 h) and Exercise (2 h)
+	*  Autonomous Navigation for Flying Robots (EdX MOOC course)
+Lecture videos and Interactive exercises (2 ECTS)
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ss2015:lecture_shape_analysis] => 1
+                    [teaching:ss2015:multiscale_methods] => 1
+                    [teaching:ss2015:mvg2015] => 1
+                    [teaching:ss2015:autonavx] => 1
+                    [teaching:ss2015:seminar_shape_analysis] => 1
+                    [teaching:ss2015:gpucourse_ss2015] => 1
+                    [teaching:ss2015:mlpractice_ss2015] => 1
+                    [teaching:ss2015:visnav_ss2015] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1452009728
+            [modified] => 1460101838
+        )
+
+    [creator] => Zorah Laehner
+    [user] => laehner
+    [last_change] => Array
+        (
+            [date] => 1460101838
+            [ip] => 131.159.19.239
+            [type] => E
+            [id] => teaching:ss2016
+            [user] => triebel
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lingni] => Ma Lingni
+            [laehner] => Zorah Laehner
+            [moellerm] => Dr. Michael Möller
+            [domokos] => Csaba Domokos
+            [schmifra] => Frank Ruediger Schmidt
+            [hazirbas] => Caner Hazirbas
+            [triebel] => Rudolph Triebel
+        )
+
+    [title] => Summer Semester 2016
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => summer_semester_2016
+                            [title] => Summer Semester 2016
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome.
+
+Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Summer Semester 2016
+
+Lectures
+
+	*  Computer Vision II: Multiple View Geometry
+Lecture (4 h) and Exercise (2 h)
+	*  Analysis of Three-Dimensional Shapes
+(4h + 2h / 8 ECTS)
+	*  Convex Optimization for Computer Vision
+(4h + 2h / 8 ECTS)
+	*  Probabilistic Graphical Models in Computer Vision
+(2h + 2h / 5 ECTS)
+	*  Machine Learning for Computer Visio…
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ss2016:mvg2016] => 1
+                    [teaching:ss2016:shape_2238] => 1
+                    [teaching:ss2016:lecture_convex_optimization] => 1
+                    [teaching:ss2016:lecture_graphical_models] => 1
+                    [teaching:ss2016:mlcv16] => 1
+                    [teaching:ss2016:seminar_shape_analysis] => 1
+                    [teaching:ss2016:mlpractice_ss2016] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1313073414
+            [modified] => 1330338496
+        )
+
+    [creator] => Dr. Ulrich Schlickewei
+    [last_change] => Array
+        (
+            [date] => 1330338496
+            [ip] => 131.159.18.129
+            [type] => E
+            [id] => teaching:ws2011
+            [user] => sturmju
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [schlicku] => Dr. Ulrich Schlickewei
+            [cremers] => Prof. Dr. Daniel Cremers
+            [oswaldm] => Martin Oswald
+            [aubry] => Mathieu Aubry
+            [sturmju] => Juergen Sturm
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => vmcv2011
+            [1] => cocv2011
+        )
+
+    [title] => Winter Semester 2011/12
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => winter_semester_201112
+                            [title] => Winter Semester 2011/12
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Winter Semester 2011/12
+
+	*  Variational Methods for Computer Vision
+ Lecture (3 h) and Exercise (3 h) (8 ECTS)
+	*  Combinatorial Optimization in Computer Vision
+ Lecture (2 h) and Exercise (2 h every two weeks) (4 ECTS)
+	*  Practical Course: GPU Programming in Computer Vision
+ (6h / 10 ECTS) block seminar during the semester break
+	*  Seminar:…
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ws2011:vmcv2011] => 1
+                    [teaching:ws2011:cocv2011] => 1
+                    [teaching:ws2011:gpucourse2011] => 1
+                    [teaching:ws2011:descriptor] => 1
+                    [teaching:ws2011:doktorandenseminar] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1340361984
+            [modified] => 1346840829
+        )
+
+    [creator] => Jan Stühmer
+    [user] => stuehmer
+    [last_change] => Array
+        (
+            [date] => 1346840829
+            [ip] => 131.159.18.28
+            [type] => E
+            [id] => teaching:ws2012
+            [user] => souiai
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [stuehmer] => Jan Stühmer
+            [oswaldm] => Martin Oswald
+            [cremers] => Prof. Dr. Daniel Cremers
+            [souiai] => Mohamed Souiai
+        )
+
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => visnav2012
+        )
+
+    [title] => Winter Semester 2012/13
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => winter_semester_201213
+                            [title] => Winter Semester 2012/13
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Winter Semester 2012/13
+
+	*  Einführung in die Informatik 1 für Ingenieure (MSE)
+ Vorlesung (2 SWS) und Übung (3 SWS)
+	*  Statistical Methods and Learning in Computer Vision
+ Lecture (2 h) and Exercise (2 h every two weeks)
+	*  Practical Course: GPU Programming in Computer Vision
+ (6h / 10 ECTS) block seminar during the semester break
+	*  Semin…
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ws2012:mse_ws12] => 1
+                    [teaching:ws2012:statmethods] => 1
+                    [teaching:ws2012:gpucourse_ws12] => 1
+                    [teaching:ws2012:ml2012] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1372949639
+            [modified] => 1390931734
+        )
+
+    [creator] => Mohamed Souiai
+    [user] => souiai
+    [last_change] => Array
+        (
+            [date] => 1390931734
+            [ip] => 131.159.19.119
+            [type] => E
+            [id] => teaching:ws2013
+            [user] => strekalo
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [souiai] => Mohamed Souiai
+            [triebel] => Rudolph Triebel
+            [strekalo] => Evgeny Strekalovskiy
+        )
+
+    [sorthow] => asc
+    [sortby] => page
+    [title] => Winter Semester 2013/14
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => winter_semester_201314
+                            [title] => Winter Semester 2013/14
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Winter Semester 2013/14
+
+	*  Variational Methods for Computer Vision
+ Lecture (3 h) and Exercise (3 h) (8 ECTS)
+	*  Lecture: Machine Learning for Computer Vision 
+Lecture (2 h) and Exercise (1h) 
+	*  Seminar: Current Trends in Machine Learning (IN 2107)
+(2 h / 4 ECTS)
+	*  Practical Course: GPU Programming in Computer Vision
+(6h / 10 ECTS)
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ws2013:vmcv2013] => 1
+                    [teaching:ws2013:ml_ws13] => 1
+                    [teaching:ws2013:ml2013] => 1
+                    [teaching:ws2013:gpucourse_ws2013] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1403862362
+            [modified] => 1420730481
+        )
+
+    [creator] => Mohamed Souiai
+    [user] => souiai
+    [last_change] => Array
+        (
+            [date] => 1420730481
+            [ip] => 131.159.19.226
+            [type] => E
+            [id] => teaching:ws2014
+            [user] => hazirbas
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [triebel] => Rudolph Triebel
+            [hazirbas] => Caner Hazirbas
+        )
+
+    [title] => Winter Semester 2014/15
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => winter_semester_201415
+                            [title] => Winter Semester 2014/15
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome. / Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Winter Semester 2014/15
+
+	*  Variational Methods for Computer Vision
+ Lecture (3 h) and Exercise (3 h) (8 ECTS)
+	*   Numerisches Programmieren (in German)
+Lecture (2 h) and Exercise (3 h) (6 ECTS)
+	*  Seminar: Current Trends in Machine Learning (IN 2107)
+(2 h / 4 ECTS)
+	*  Seminar: Selected Topics in Variational Image Processing (IN 2107)
+(2 h …
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ws2014:vmcv2014] => 1
+                    [teaching:ws2014:ml2014] => 1
+                    [teaching:ws2014:vms2014] => 1
+                    [teaching:ws2014:gpucourse_ws2014] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1435062597
+            [modified] => 1453237148
+        )
+
+    [creator] => Thomas Windheuser
+    [user] => windheus
+    [last_change] => Array
+        (
+            [date] => 1453237148
+            [ip] => 83.171.173.155
+            [type] => E
+            [id] => teaching:ws2015
+            [user] => cremers
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [schmifra] => Frank Ruediger Schmidt
+            [maierr] => Robert Maier
+            [stueckle] => Jörg Stückler
+            [souiai] => Mohamed Souiai
+            [triebel] => Rudolph Triebel
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [sorthow] => asc
+    [sortby] => none
+    [navextra] => Array
+        (
+            [0] => souiai
+        )
+
+    [navhide] => Array
+        (
+            [0] => https://vision.in.tum.de/teaching/ws2014/vmcv2014
+        )
+
+    [title] => Winter Semester 2015/16
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => winter_semester_201516
+                            [title] => Winter Semester 2015/16
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome.
+
+Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Winter Semester 2015/16
+
+Lectures
+
+	*  Computer Vision I: Variational Methods
+ Lecture (4 h) and Exercise (2 h) (8 ECTS)
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ws2015:vmcv2015] => 1
+                    [teaching:ws2015:cocv_2245] => 1
+                    [teaching:ws2015:mlcv15] => 1
+                    [teaching:ws2015:gpucourse_ws2015] => 1
+                    [teaching:ws2015:visnav_ws2015] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1466002346
+            [modified] => 1467714981
+        )
+
+    [creator] => Caner Hazirbas
+    [user] => hazirbas
+    [last_change] => Array
+        (
+            [date] => 1467714981
+            [ip] => 131.159.19.171
+            [type] => E
+            [id] => teaching:ws2016
+            [user] => schmifra
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [hazirbas] => Caner Hazirbas
+            [schmifra] => Frank R. Schmidt
+        )
+
+    [title] => Winter Semester 2016/17
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => winter_semester_201617
+                            [title] => Winter Semester 2016/17
+                            [type] => ul
+                            [level] => 3
+                        )
+
+                )
+
+            [abstract] => Inquiries for Bachelor and Master projects are always welcome.
+
+Anfragen zu Bachelor-/Masterarbeiten und -projekten sind jederzeit herzlich willkommen!
+
+Winter Semester 2016/17
+
+Lectures
+
+	*   Numerisches Programmieren (in German)
+Lecture (2 h) and Exercise (3 h) (6 ECTS)
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [teaching:ws2016:seminar_shape_analysis] => 1
+                    [teaching:ws2016:dlpractice_ws2016] => 1
+                    [teaching:ws2016:visnav_ws2016] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1466002737
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1466002737
+            [ip] => 131.159.19.173
+            [type] => E
+            [id] => teaching
+            [user] => hazirbas
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [sturmju] => Juergen Sturm
+            [schlicku] => Dr. Ulrich Schlickewei
+            [bergbaue] => Julia Bergbauer
+            [souiai] => Mohamed Souiai
+            [windheus] => Thomas Windheuser
+            [engelj] => Jakob Julian Engel
+            [maierr] => Robert Maier
+            [hazirbas] => Caner Hazirbas
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => ws2016
+            [1] => ss2016
+            [2] => ws2015
+            [3] => ss2015
+            [4] => ws2014
+            [5] => ss2014
+            [6] => ws2013
+            [7] => ss2013
+            [8] => ws2012
+            [9] => ss2012
+            [10] => ws2011
+            [11] => ss2011
+        )
+
+    [navhide] => Array
+        (
+        )
+
+    [relation] => Array
+        (
+            [isreplacedby] => teaching:ws2016
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+    [description] => Array
+        (
+            [abstract] => 
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1362427056
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1362427056
+            [ip] => 188.174.214.40
+            [type] => E
+            [id] => workshops
+            [user] => cremers
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [lohr] => Quirin Lohr
+            [oswaldm] => Martin Oswald
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [user] => 
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => eurobotics_rgbd2012
+            [1] => iros_rgbd2012
+        )
+
+    [title] => Workshops
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => workshops
+                            [title] => Workshops
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => IPAM Workshop on Convex Relaxation Methods 
+
+February 11 - 15, 2013
+University of California at Los Angeles Organizers: 
+Xavier Bresson 
+Antonin Chambolle 
+Tony Chan 
+Daniel Cremers 
+Stanley Osher 
+Thomas Pock 
+Gabriele SteidlSymposium on Total Variation 
+
+Monday, February 6, 2012 - 09:00-12:00
+Room: FMI 02.09.023
+TU München, MI-Building (Campus Garching) Speakers: 
+Vicent Caselles 
+Antonin Chambolle 
+Daniel Cremers 
+Massimo Fornasier 
+Matteo Novaga 
+Thomas PockWorkshop 
+RGB-D Workshop on 3D Per…
+        )
+
+    [relation] => Array
+        (
+            [media] => Array
+                (
+                    [workshops:cremers_strekalovskiy_jmiv12.png] => 1
+                    [workshops:cameraman.jpg] => 1
+                    [workshops:rgbd.png] => 1
+                    [workshops:shape.png] => 1
+                    [workshops:cut.jpg] => 1
+                )
+
+            [firstimage] => workshops:cremers_strekalovskiy_jmiv12.png
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1320346393
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1320346393
+            [ip] => 188.174.61.85
+            [type] => E
+            [id] => tutorials
+            [user] => cremers
+            [sum] => 
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [sturmju] => Juergen Sturm
+            [cremers] => Prof. Dr. Daniel Cremers
+        )
+
+    [user] => 
+    [sortby] => none
+    [sorthow] => asc
+    [sortman] => Array
+        (
+            [0] => iccv2011
+            [1] => dagm2011
+            [2] => eccv2010
+        )
+
+    [title] => Tutorials
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => tutorials
+                            [title] => Tutorials
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                )
+
+            [abstract] => ICCV 2011Variational Methods for Computer VisionOrganizers: 
+Daniel Cremers 
+ Bastian Goldlücke 
+Thomas PockDAGM 2011Convex Optimization for Computer VisionOrganizers: 
+Daniel Cremers 
+ Thomas PockECCV 2010Variational Methods in Computer VisionOrganizers: 
+Daniel Cremers 
+ Bastian Goldlücke 
+Thomas Pock
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [tutorials:iccv2011] => 1
+                    [tutorials:dagm2011] => 1
+                    [tutorials:eccv2010] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><pre style='display:none'>Array
+(
+    [date] => Array
+        (
+            [created] => 1301320210
+            [modified] => 1461879376
+        )
+
+    [creator] => 
+    [last_change] => Array
+        (
+            [date] => 1461879376
+            [ip] => 77.47.69.79
+            [type] => E
+            [id] => jobs
+            [user] => hazirbas
+            [sum] => IDP project offer from Julia Diebold is removed.
+            [extra] => 
+        )
+
+    [contributor] => Array
+        (
+            [lohr] => Quirin Lohr
+            [sturmju] => Juergen Sturm
+            [oswaldm] => Martin Oswald
+            [cremers] => Prof. Dr. Daniel Cremers
+            [dieboldj] => Julia Diebold
+            [stueckle] => Jörg Stückler
+            [hazirbas] => Caner Hazirbas
+        )
+
+    [user] => 
+    [sorthow] => asc
+    [sortby] => none
+    [navhide] => Array
+        (
+            [0] => advert
+        )
+
+    [title] => Job Offers
+    [description] => Array
+        (
+            [tableofcontents] => Array
+                (
+                    [0] => Array
+                        (
+                            [hid] => job_offers
+                            [title] => Job Offers
+                            [type] => ul
+                            [level] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [hid] => job_application_form
+                            [title] => Job Application Form
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [2] => Array
+                        (
+                            [hid] => postdoctoral_researcher
+                            [title] => Postdoctoral Researcher
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [3] => Array
+                        (
+                            [hid] => doctoral_students_in_computer_vision_pattern_recognition_or_machine_learning
+                            [title] => Doctoral Students in Computer Vision, Pattern Recognition or Machine Learning
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [4] => Array
+                        (
+                            [hid] => student_researchers
+                            [title] => Student Researchers
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                    [5] => Array
+                        (
+                            [hid] => master_theses
+                            [title] => Master theses
+                            [type] => ul
+                            [level] => 2
+                        )
+
+                )
+
+            [abstract] => Job Application Form
+
+Please use this web form to submit applications.
+
+Postdoctoral Researcher
+
+Requirements are a strong background in mathematics and a track record in Computer Vision or related areas.
+
+Please send application as pdf (including CV, publication list and transcripts) through this web form.
+        )
+
+    [relation] => Array
+        (
+            [references] => Array
+                (
+                    [application] => 1
+                )
+
+            [firstimage] => 
+        )
+
+    [internal] => Array
+        (
+            [cache] => 1
+            [toc] => 1
+        )
+
+)
+</pre><body>
+<div id="visual-wrapper">
+<div id="header">
+<h1><a href="http://www.tum.de">Technische Universit&auml;t M&uuml;nchen</a></h1>
+<p id="claim" lang="en" xml:lang="en">The Entrepreneurial University</p>
+<h2>TUM</h2>
+<p id="subclaim"><a href="http://www.in.tum.de/">www.in.tum.de</a></p>
+<p id="foto"><a href="/"><span class='h1'>Computer Vision Group</span><span class='h2'></span></a></p>
+</div>
+<div id="personaltools">
+<h3>Pers&ouml;nlicher Status und Werkzeuge</h3>
+<form class="button btn_login" method="get" action="/teaching/ss2014/mvg2014/material"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="b7a43165b2f198d61e8e8ecca2d44fff" /><input type="submit" value="Login" class="button" title="Login" /></div></form>
+<div class="language">
+<ul class="tool">
+<li><em>de</em></li>
+<li><a href="en">en</a></li>
+</ul>
+</div>
+
+</div>
+<div class="row_blank"></div>
+<table id="table-main-wrapper">
+<tr>
+<td id="table-left"><div id="left">
+<div class="portlet">
+<h3>Search</h3>
+<form id="search-box" method="post" action="/" name="search-box">
+<input name="id" value="" id="search-field" type="text" size="15" /><input name="searchbutton" value="Search" id="search-button" type="submit" />
+<input type="hidden" name="do" value="search" />
+</form>
+<div class="portletBox">&nbsp;</div>
+<div class="portlet">
+<h3 class="navigationlist">Navigation</h3>
+<ul class="navigationlist">
+			<li><a href="/">Home</a>
+		</li>
+			<li><a href="/application">Application Form</a>
+		</li>
+			<li><a href="/publications">Publications</a>
+		</li>
+						<li class="childs"><a href="/research">Research</a>
+				</li>
+						<li class="childs"><a href="/data">Datasets and Software</a>
+				</li>
+						<li class="childs"><a href="/members">Members</a>
+				</li>
+									<li class="open childs">
+			<strong><a href="/teaching">Teaching</a></strong>
+						<ul>
+						        			                										                        <li class="childs second"><a href="/teaching/ws2016">Winter Semester 2016/17</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ss2016">Summer Semester 2016</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ws2015">Winter Semester 2015/16</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ss2015">Summer Semester 2015</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ws2014">Winter Semester 2014/15</a>
+									                										        			                			                        <li class="open childs second">
+												<strong><a href="/teaching/ss2014">Summer Semester 2014</a></strong>
+												<ul>
+																																	<li class="third">
+										<a href="/teaching/ss2014/autonavx">Autonomous Navigation for Flying Robots (EdX course)</a>
+										</li>
+																																																		<li class="third">
+										<a href="/teaching/ss2014/gpucourse_ss2014">Practical Course: GPU Programming in Computer Vision (6h / 10 ECTS)</a>
+										</li>
+																																																		<li class="third">
+										<a href="/teaching/ss2014/lecture_shape_analysis">Analysis of Three-Dimensional Shapes (IN2238) (2h + 1h, 4 ECTS)</a>
+										</li>
+																																								<li class="third">
+									<strong>
+									<a href="/teaching/ss2014/mvg2014">Multiple View Geometry (IN2228)</a>
+									</strong>
+									</li>
+																																									<li class="third">
+										<a href="/teaching/ss2014/seminar_shape_analysis">Recent Advances in the Analysis of 3D Shapes</a>
+										</li>
+																																																		<li class="third">
+										<a href="/teaching/ss2014/visnav2014">Practical Course: Visual Navigation for Flying Robots (6h SWS)</a>
+										</li>
+																													</ul>
+						</li>
+															        			                										                        <li class="childs second"><a href="/teaching/ws2013">Winter Semester 2013/14</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ss2013">Summer Semester 2013</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ws2012">Winter Semester 2012/13</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ss2012">Summer Semester 2012</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ws2011">Winter Semester 2011/12</a>
+									                										        			                										                        <li class="childs second"><a href="/teaching/ss2011">Summer Semester 2011</a>
+									                										        									                <li class="second"><a href="/teaching/archive">Archive</a>
+									        						        									                <li class="second"><a href="/teaching/phd">PhD Seminar</a>
+									        						</ul>
+				</li>
+						<li class="childs"><a href="/workshops">Workshops</a>
+				</li>
+						<li class="childs"><a href="/tutorials">Tutorials</a>
+				</li>
+			<li><a href="/awards">Awards</a>
+		</li>
+			<li><a href="/jobs">Job Offers</a>
+		</li>
+			<li><a href="/contact">Contact</a>
+		</li>
+</ul>
+</div>
+</div>
+</div></td>
+<td id="table-content"><div id="content">
+<div id="portal-breadcrumbs">
+<a href="/">Home</a>
+<a class="breadcrumb_link" href="/teaching">
+Teaching</a>
+<a class="breadcrumb_link" href="/teaching/ss2014">
+Summer Semester 2014</a>
+<a class="breadcrumb_link" href="/teaching/ss2014/mvg2014">
+Multiple View Geometry (IN2228)</a>
+<span id="last_breadcrumb_link">material</span>
+</div>
+<div id="content-wrapper">
+<div class="documentBody">
+<div class="page">
+<!-- wikipage start -->
+<div class='dokuwiki'><h1>Password required</h1><form method=POST>Enter Password: <input type=password name='inf9password[teaching:ss2014:mvg2014:material]'><br /><input type=submit></form>
+</div>
+<!-- wikipage stop -->
+</div>
+<div class="lastmod">
+Last edited 02.07.2014 22:06 by <!--<a href="/members/cremers">-->Prof. Dr. Daniel Cremers<!--</a>-->
+</div>
+</div><div class="toolline">
+<img src="/lib/tpl/inf9/layout/print.png" width="12" height="16" alt="drucken" title="drucken" />
+<a target="_print" href= "/_export/htmlbody/teaching/ss2014/mvg2014/material">Druckansicht</a>
+</div></div>
+</div>
+</td>
+<td id="table-right"><div id="right">
+<div class="portlet_no_box">
+
+<p>
+<img src="/_media/spezial/right/ls_cvpr_os_blau_rgb.png?w=64&amp;tok=2bbd41" class="media" alt="" width="64" />
+
+<div itemscope itemtype="http://schema.org/Organization">
+<h3 itemprop="name">Informatik IX</h3>
+<h3 itemprop="description">Computer Vision Group</h3>
+<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress">Boltzmannstrasse 3</span><br>
+<span itemprop="postalCode">85748</span> <span itemprop="addressLocality">Garching</span></p>
+<p itemprop="email">info@vision.in.tum.de</p>
+</div>
+
+<br/>
+
+<br/>
+
+<a href="https://www.youtube.com/playlist?list=PLTBdjV_4f-EJnwIMsY1T0LwylRM7s_HcL" class="media" target="_blank" title="https://www.youtube.com/playlist?list=PLTBdjV_4f-EJnwIMsY1T0LwylRM7s_HcL"  rel="nofollow"><img src="/_media/spezial/right/youtube.png" class="media" alt="" /></a>
+<a href="https://www.facebook.com/vision.in.tum.de" class="media" target="_blank" title="https://www.facebook.com/vision.in.tum.de"  rel="nofollow"><img src="/_media/spezial/right/facebook.png" class="media" alt="" /></a>
+</p>
+
+</div>
+</div></td>
+</table><div id="globalnavfooter">
+        
+        <div class="navi"><ul class="level_1"><li class="first"><span class="pagetitle"><a href="http://www.tum.de/en/about-tum/">About TUM</a></span><ul class="level_2"><li><a href="http://www.tum.de/en/about-tum/our-university/">Our University</a></li><li><a href="http://www.tum.de/en/about-tum/news/">News</a></li><li><a href="http://www.tum.de/en/about-tum/publications/">Publications</a></li><li><a href="http://www.tum.de/en/about-tum/departments/">Departments</a></li><li><a href="http://www.tum.de/en/about-tum/awards-and-honors/">Awards and honors</a></li><li><a href="http://www.tum.de/en/about-tum/university-hospitals/">University Hospitals</a></li><li><a href="http://www.tum.de/en/about-tum/working-at-tum/">Working at TUM</a></li><li><a href="http://www.tum.de/en/about-tum/tum-fan/">TUM Fan?</a></li><li><a href="http://www.tum.de/en/about-tum/contact-directions/">Contact &amp; Directions</a></li></ul></li><li><span class="pagetitle"><a href="http://www.tum.de/en/research/">TUM Research</a></span><ul class="level_2"><li><a href="http://www.tum.de/en/research/departments/">Faculties</a></li><li><a href="http://www.tum.de/en/research/researchcenters/">Researchcenters</a></li><li><a href="http://www.exzellenz.tum.de/en/homepage/">Excellence Initiative</a></li><li><a href="http://www.tum.de/en/research/current-projects/">Current projects</a></li><li><a href="http://www.tum.de/en/research/research-partners/">Research Partners</a></li><li><a href="http://www.forte.tum.de/en/forschungsfoerderung/">Research promotion</a></li><li><a href="http://www.gs.tum.de">TUM Graduate School</a></li><li><a href="http://www.tum.de/en/research/postdocs/">Postdocs</a></li><li><a href="http://www.tum.de/en/about-tum/working-at-tum/open-positions/">Open Professorships</a></li></ul></li><li><span class="pagetitle"><a href="http://www.tum.de/en/studies/">Studies</a></span><ul class="level_2"><li><a href="http://www.lehren.tum.de/nc/en/home/">Teaching</a></li><li><a href="http://www.tum.de/en/studies/learning/">Learning</a></li><li><a href="http://www.tum.de/en/studies/degree-programs/">Degree programs</a></li><li><a href="http://www.tum.de/en/studies/international-students/">International Students</a></li><li><a href="http://www.tum.de/en/studies/advising/">Advising</a></li><li><a href="http://www.tum.de/en/studies/application-and-acceptance/">Application and Acceptance</a></li><li><a href="http://www.tum.de/en/studies/fees-and-financial-aid/">Fees and Financial Aid</a></li><li><a href="http://www.tum.de/en/studies/during-your-studies/">During your Studies</a></li><li><a href="http://www.tum.de/en/studies/completing-your-studies/">Completing your Studies</a></li><li><a href="http://www.tum.de/en/studies/continuing-education/">Continuing Education and Lifelong Learning</a></li><li><a href="http://www.tum.de/en/studies/advising/hotline-and-service-desk/">Contacts</a></li></ul></li><li><span class="pagetitle"><a href="http://www.tum.de/en/university-life/">University Life</a></span><ul class="level_2"><li><a href="http://www.tum.de/en/university-life/student-life/">Student Life</a></li><li><a href="http://www.tum.de/en/university-life/accommodations/">Accommodations</a></li><li><a href="http://www.tum.de/en/university-life/sports/">Sports</a></li><li><a href="http://www.tum.de/en/university-life/music-and-arts/">Music and Arts</a></li><li><a href="http://www.tum.de/en/university-life/events/">Events</a></li><li><a href="http://www.mentoring.tum.de/">Mentoring</a></li><li><a href="http://www.alumni.tum.de/">Alumni Services</a></li><li><a href="http://www.schueler.tum.de/">TUM for schools</a></li><li><a href="http://www.tum-onlineshop.de/">TUM Shop</a></li></ul></li><li><span class="pagetitle"><a href="http://www.tum.de/en/global/">Global</a></span><ul class="level_2"><li><a href="http://www.tum.de/en/global/international-locations/">International Locations</a></li><li><a href="http://www.tum.de/en/global/tum-asia/">TUM Asia</a></li><li><a href="http://www.tum.de/en/studies/international-students/">Study in Munich</a></li><li><a href="http://www.international.tum.de/en/go-international/">Exchange</a></li><li><a href="http://www.international.tum.de/en/international-alliances/">International Alliances</a></li><li><a href="http://www.sprachenzentrum.tum.de/en/home-language-center/">Language Center</a></li><li><a href="http://www.tum.de/en/global/contacts/">Contacts</a></li></ul></li><li><span class="pagetitle"><a href="http://www.tum.de/en/tum-business/">TUM &amp; Business</a></span><ul class="level_2"><li><a href="http://www.tum.de/en/tum-business/entrepreneurship/">Entrepreneurship</a></li><li><a href="http://www.tum.de/en/tum-business/technology-transfer/">Technology transfer</a></li><li><a href="http://www.tum.de/en/tum-business/industry-liaison-office/">Industry Liaison Office</a></li><li><a href="http://www.together.tum.de/en/career/berufsorientierung-bewerbung/job-search/employers/">Recruit our Graduates</a></li><li><a href="http://www.fundraising.tum.de/en/funding-models-suitable-for-firms/">Support and Endowments</a></li><li><a href="http://www.tum.de/en/tum-business/deutschlandstipendium/">Deutschlandstipendium</a></li><li><a href="http://www.tum.de/en/tum-business/contacts/">Contacts</a></li></ul></li></ul><div style="clear: both;"></div></div>
+    </div><div id="footer">&copy; 2009 - 2015 TUM Technische
+Universit&auml;t M&uuml;nchen
+<div class="right">
+<ul class="tool">
+<li><a href="/teaching/ss2014/mvg2014/contact" class="wikilink2" title="teaching:ss2014:mvg2014:contact" rel="nofollow">Impressum</a></li>
+<!--<li><a href="/about">About</a></li>-->
+</ul>
+</div>
+</div></div><!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://adm9.in.tum.de/piwik/" : "http://adm9.in.tum.de/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script>
+<noscript>
+<img src="http://adm9.in.tum.de/piwik/piwik.php?idsite=1" style="border:0" alt="" />
+</noscript>
+<!-- End Piwik Tracking Code -->
+<div class="no"><img src="/lib/exe/indexer.php?id=teaching%3Ass2014%3Amvg2014%3Amaterial&amp;1469851922" width="2" height="1" alt="" /></div>
+</body>
+</html>

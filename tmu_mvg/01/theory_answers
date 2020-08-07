@@ -1,0 +1,101 @@
+1.a Show that sets are linearly independent:
+  Vector set v is linearly independent if a1*v1 + .. an*vn = 0 is true only when a1 ,, an equals zero
+  So if we have 3*3 matrix:
+    (v1_1, v1_2, v1_3) - v1
+    (v2_1, v2_2, v2_3) - v2
+    (v3_1, v3_2, v3_3) - v3
+
+    so to prove a1*v1 + a2*v2 + a3*v3 = 0 is true only when a1, a2, and a3 equal zero we should solve system of linear equations and find out a1, a2 and a3:
+
+    a1*v1_1 + a2*v2_1 + a3*v3_1 = 0
+    a1*v1_2 + a2*v2_2 + a3*v3_2 = 0
+    a1*v1_3 + a2*v2_3 + a3*v3_3 = 0
+
+  1)
+    (1, 1, 1)
+    (1, 1, 0)
+    (1, 0, 0)
+
+    a1 + a2 + a3 = 0
+    a1 + a2 = 0
+    a1 = 0
+
+    There is only one solution (0, 0, 0) - so the set of vectors is linearly independent
+
+  2)
+    (2, 1, 0)
+    (1, 1, 0)
+
+    a1*2 + a2 = 0
+    a1 + a2 = 0
+
+    There is only one solution (0, 0) - so the set of vectors is linearly independent
+
+  3)
+    (2, 1, 0)
+    (3, 1, 0)
+    (0, 0, 1)
+    (1, 0, 1)
+
+    a1*2 + a2*3 + a4 = 0 *(1)
+    a1 + a2 = 0 (2)
+    a3 + a4 = 0 (3)
+
+    a2 + a4 = 0 (4) // (1) - 2(2)
+    a1 + a2 = 0
+    a3 + a4 = 0
+
+    This system of linear equations has inifinte solutions (for example (-1, 1, 1, -1)) so the of vectors is linearly dependent
+
+1.b Show whether set of vectors span R3
+  Span of the matrix is the number of linearly independent rows in the matrix
+
+  1)
+    (1, 1, 1)
+    (1, 1, 0)
+    (1, 0, 0)
+    It spans R3 since number of linearly independent rows is 3
+
+  2)
+    (2, 1, 0)
+    (1, 1, 0)
+    Nope, since number of linearly independent rows is 2
+
+  3)
+    (2, 1, 0)
+    (3, 1, 0)
+    (0, 0, 1)
+    (1, 0, 1)
+    Yep, since number of linearly independent vectors is 3
+
+1.c Check wheter set of vectors form a basis R3
+  Set of vectors form a basis R3 if it's linearly independent set and it spans R3
+
+  1)
+    (1, 1, 1)
+    (1, 1, 0)
+    (1, 0, 0)
+    Forms basis since it linearly independent and spans R3
+
+  2)
+    (2, 1, 0)
+    (1, 1, 0)
+    Doesn't form basis since it doesn't span R3
+
+  3)
+    (2, 1, 0)
+    (3, 1, 0)
+    (0, 0, 1)
+    (1, 0, 1)
+    Doesn't form basis since it linearly dependent
+
+2. Prove that the following sets form a group under matrix multiplication
+  Invertible symmetric matrices.
+    They don't form a group since closure property isn't satisfied - product of two invertible symmetric matrices isn't always an invertible symmetric matrix
+  Matrices whose determinant equals -1.
+    They don't form group since they violate clouse property - determinant of product equals 1
+  Matrices whose determinant bigger that 0.
+    They form group since they follow all four properties - in particualr they obey clouse property since determinant of product also is positive
+
+3. Prove or disprove. There exist 4 non-zero vectors from R3 which pairwise orthogonal.
+  Let's create a set of vectors from them. We get 4x3 matrix. And maximum rank of this matrix is 3 (since max rank is min(rows, columns)) -> there is maximum 3 linearly independent vectors. This is contradiction since by statement definition we should have 4 independent vectors. So by contradiction it's impossible to have 4 R3 pairwise orthogonal vectors.
