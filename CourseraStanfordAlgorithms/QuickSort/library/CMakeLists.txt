@@ -6,8 +6,7 @@ add_library(library STATIC
 
 target_compile_options(library
   PRIVATE
-    -Wall
-    -Werror)
+    -Wall)
 
 target_include_directories(library
   INTERFACE

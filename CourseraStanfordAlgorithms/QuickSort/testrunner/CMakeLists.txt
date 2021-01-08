@@ -12,8 +12,7 @@ add_executable(testrunner
 
 target_compile_options(testrunner
   PRIVATE
-    -Wall
-    -Werror)
+    -Wall)
 
 target_link_libraries(testrunner
   PRIVATE

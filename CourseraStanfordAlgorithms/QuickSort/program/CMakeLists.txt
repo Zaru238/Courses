@@ -14,8 +14,7 @@ add_custom_command(TARGET program POST_BUILD
 
 target_compile_options(program
   PRIVATE
-    -Wall
-    -Werror)
+    -Wall)
 
 target_link_libraries(program
   PRIVATE

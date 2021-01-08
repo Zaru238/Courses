@@ -6,8 +6,7 @@ add_executable(program
 
 target_compile_options(program
   PRIVATE
-    -Wall
-    -Werror)
+    -Wall)
 
 target_link_libraries(program
   PRIVATE
