@@ -1,0 +1,5 @@
+First exercise:
+  a) l coordinates w.r.t. the global frame is T*l
+  b) Lets suppose that our transformation consists from two transforms - shifting (S) and rotation (R). Our from local to robot frame rotation is S*R. And our reversing matrix is R<-1>*S<*-1>. Since R is orthogonal matrix its reverse is R<T>. Reverse of shifting is transform matrix that shifts frame in opposite direction. So reverse transform matrix is R<T>*transform_matrix(-x, -y, 0)
+  c) Transform matrix from frame 1 to frame 2 is T1<1>*T2
+  d) Landmark w.r.t. the frame 1 l is located at T12<-1>*l w.r.t. the frame 2
